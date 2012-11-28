@@ -1,4 +1,9 @@
 websiteBaseSetup
+# based on [HTML5 Boilerplate](http://html5boilerplate.com)
 ================
 
-Base html5 boilerplate, iOS images, compass mixins
+## Features
+
+* Base html5 boilerplate - index.html
+* iOS images - startup images & touch images
+* compass mixins - a collection of frequently used SASS mixins

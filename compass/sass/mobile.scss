@@ -1,0 +1,31 @@
+﻿/* ==========================================================================
+   iPhone <= 3
+   ========================================================================== */
+
+/* ==========================================================================
+   iPhone <= 3 PORTRAIT MODE ONLY
+   ========================================================================== */
+@media only screen and (max-width: 320px), 
+only screen and (orientation: portrait) {
+	
+}
+
+/* ==========================================================================
+   iPhone <= 3 LANDSCAPE MODE ONLY
+   ========================================================================== */
+@media only screen and (max-width: 480px) and (min-width: 321px),
+only screen and (orientation: landscape) {
+	
+}
+
+/* ==========================================================================
+   iPhone 4x & iPad 3x RETINA DISPLAY
+   define hi-res images path here...
+   convention = "path-to-your-img/*@2x.*"
+   ========================================================================== */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-device-pixel-ratio: 3/2), 
+only screen and (min-device-pixel-ratio: 1.5) {
+	
+}

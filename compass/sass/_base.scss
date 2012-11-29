@@ -1,14 +1,43 @@
-﻿@import "normalize";
+﻿$experimental-support-for-khtml:false;
 
-@mixin pie {
-    position: relative;
-    behavior: url(../PIE.htc);
+$sprite-sprite-base-class: ".sprite";
+$sprite-layout: smart;
+$sprite-sprite-dimensions: true;
+
+@import "compass/reset";
+@import "compass/typography";
+@import "compass/css3";
+@import "compass/utilities";
+
+@import "normalize";
+
+@function black($opacity) {
+	@return rgba(0,0,0,$opacity)
 }
 
-@mixin pieGradient ($color1, $color2) {
-    @include background-image(linear-gradient($color1, $color2));
-    behavior: url(/PIE.htc);
-    -pie-background: linear-gradient($color1, $color2); /*PIE*/  
+@function white($opacity) {
+	@return rgba(0,0,0,$opacity)
+}
+
+@mixin box-emboss($opacity, $opacity2) {
+	@include box-shadow(white($opacity) 0 1px 0, black($opacity2) 0 1px 0 inset);
+}
+
+@mixin letterpress-light($opacity) {
+	@include text-shadow(white($opacity) 0 1px 0);
+}
+
+@mixin letterpress-dark($opacity) {
+	@include text-shadow(black($opacity) 0 -1px 0);
+}
+
+@mixin hide-text {
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
 }
 
 /* Calculate fluid ratio based on two dimensions (width/height) */
@@ -42,4 +71,20 @@
     overflow: hidden;
     visibility: hidden;
   }
+}
+
+@mixin animation (
+	$name: false, /* keyframename|none */
+	$duration: 0, /* time(default=0) */ 
+	$timing_function: ease, /* linear|ease(default)|ease-in|ease-out|ease-in-out|cubic-bezier(n,n,n,n)default */
+	$delay: 0, /* time(default=0) */
+	$iteration_count: 1, /* n|infinite */ 
+	$direction: normal /* normal|alternate */
+) {
+	@if $name {
+		@if $experimental-support-for-mozilla { -moz-animation: $name $duration $timing_function $delay $iteration_count $direction; }
+		@if $experimental-support-for-webkit { -webkit-animation: $name $duration $timing_function $delay $iteration_count $direction; }
+		@if $experimental-support-for-opera { -o-animation: $name $duration $timing_function $delay $iteration_count $direction; }
+		animation: $name $duration $timing_function $delay $iteration_count $direction;
+	}
 }

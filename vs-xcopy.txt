@@ -1,0 +1,9 @@
+XCOPY "$(ProjectDir)bin\$(TargetName).*" "C:\Websites\umbraco4.11\bin" /Y
+XCOPY "$(ProjectDir)usercontrols\*" "C:\Websites\umbraco4.11\usercontrols" /Y /S /I
+XCOPY "$(ProjectDir)css\*" "C:\Websites\umbraco4.11\css" /Y /S /I
+XCOPY "$(ProjectDir)scripts\*" "C:\Websites\umbraco4.11\scripts" /Y /S /I
+XCOPY "$(ProjectDir)xslt\*.xslt" "C:\Websites\umbraco4.11\xslt" /Y
+XCOPY "$(ProjectDir)masterpages\*.master" "C:\Websites\umbraco4.11\masterpages" /Y
+XCOPY "$(ProjectDir)Views\*" "C:\Websites\umbraco4.11\Views" /Y /S /I
+XCOPY "$(ProjectDir)compass\*" "C:\Users\chenlu\Documents\GitHub\websiteBaseSetup\compass" /Y /S /I
+XCOPY "$(ProjectDir)css\*" "C:\Users\chenlu\Documents\GitHub\websiteBaseSetup\css" /Y /S /I

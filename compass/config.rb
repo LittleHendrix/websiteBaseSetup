@@ -3,12 +3,16 @@
 # Set environment:
 # environment = :production or :development (default)
 
+# Delineate the directory for our SASS/SCSS files (this directory)
+# sass_path = File.dirname(__FILE__)
+
 # Set this to the root of your project when deployed:
 http_path = "/"
 css_dir = "stylesheets"
 sass_dir = "sass"
 images_dir = "stylesheets/images"
-javascripts_dir = "scripts"
+javascripts_dir = "../scripts"
+# generated_images_dir = "../css/images"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed

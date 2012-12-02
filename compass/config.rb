@@ -12,7 +12,7 @@ css_dir = "stylesheets"
 sass_dir = "sass"
 images_dir = "stylesheets/images"
 javascripts_dir = "../scripts"
-# generated_images_dir = "../css/images"
+generated_images_dir = "../css/images"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed

@@ -1,0 +1,23 @@
+﻿/*
+*  Susy: Un-obtrusive grids for designers
+*  By: Eric A. Meyer and OddBird
+*  Site: susy.oddbird.net
+*/
+
+$legacy-support-for-ie			: true;
+$legacy-support-for-ie6			: $legacy-support-for-ie;
+$legacy-support-for-ie7			: $legacy-support-for-ie;
+
+$relative-font-sizing           : true;
+$base-font-size                 : 16px;
+$base-line-height               : 24px;
+$border-box-sizing			    : true;
+
+$total-columns				    : 12;
+$column-width				    : 4em;
+$gutter-width				    : 1em;
+$grid-padding				    : $gutter-width;
+$container-style			    : magic; /* magic|static|fluid */
+$breakpoint-media-output	    : true;
+
+@import "susy";

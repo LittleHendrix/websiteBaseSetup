@@ -7,6 +7,8 @@
 @import "sprite/*.png";
 /*@include all-sprite-sprites;*/
 
+@import "susy_defaults";
+
 .sprite {
 	display: inline-block;
 }
@@ -21,4 +23,7 @@ figure.fluidratio {
   @include fluid-ratio(800px 200px, 300px 150px);
 
   background-image: url(about:blank);
+}
+.page {
+	@include container(30em 12 60em);
 }

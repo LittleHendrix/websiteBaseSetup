@@ -602,12 +602,18 @@ table {
 }
 
 /*@include all-sprite-sprites;*/
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000310}}
+/*
+*  Susy: Un-obtrusive grids for designers
+*  By: Eric A. Meyer and OddBird
+*  Site: susy.oddbird.net
+*/
+/* magic|static|fluid */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000312}}
 .sprite, .one, .two, .three {
   display: inline-block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000315}}
 .clearfix {
   *zoom: 1;
 }
@@ -626,28 +632,28 @@ table {
   visibility: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000318}}
 .one {
   background-position: 0 0;
   height: 395px;
   width: 640px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000319}}
 .two {
   background-position: 0 -814px;
   height: 430px;
   width: 640px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000320}}
 .three {
   background-position: 0 -395px;
   height: 419px;
   width: 640px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000321}}
 figure.fluidratio {
   /* This element will have fluid ratio from 4:1 at 800px to 2:1 at 300px. */
   padding-top: 10%;
@@ -660,4 +666,21 @@ figure.fluidratio {
   background-position: center;
   /* Internet Explorer 7/8 */
   background-image: url(about:blank);
+}
+
+@media (min-width: 30em) and (max-width: 60em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000327}}
+  .page {
+    max-width: 61em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+  .page:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }

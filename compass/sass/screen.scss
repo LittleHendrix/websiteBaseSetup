@@ -1,7 +1,8 @@
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+ */
 
 @import "base";
 @import "sprite/*.png";
@@ -24,6 +25,27 @@ figure.fluidratio {
 
   background-image: url(about:blank);
 }
-.page {
-	@include container(30em 12 60em);
+@include at-breakpoint($layout-mobile) {
+	.page {
+		@include container;
+		@include susy-grid-background;
+	}
+}
+@include at-breakpoint($layout-tablet) {
+	.page {
+		@include container;
+		@include susy-grid-background;
+	}
+}
+@include at-breakpoint($layout-desktop) {
+	.page {
+		@include container;
+		@include susy-grid-background;
+	}
+}
+@include at-breakpoint($layout-wide) {
+	.page {
+		@include container;
+		@include susy-grid-background;
+	}
 }

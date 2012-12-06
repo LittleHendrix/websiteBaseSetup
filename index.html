@@ -31,7 +31,7 @@
 	<link rel="shortcut icon" href="/favicon.ico" type="image/png" />
     <link rel="stylesheet" href="/css/screen.min.css?v=0.1" type="text/css" media="screen, projection">
     <!--[if lt IE 9]><link rel="stylesheet" href="/css/pie.min.css" type="text/css" media="screen, projection"><![endif]-->
-    <!--[if (gte IE 9)|!(IE)]><link rel="stylesheet" href="/css/mobile.min.css" type="text/css" media="only screen and (max-device-width: 480px)" /><![endif]-->
+    <!--[if (gte IE 9)|!(IE)]><link rel="stylesheet" href="/css/mobile.min.css" type="text/css" media="only screen and (max-device-width: 768px)" /><![endif]-->
     <script src="/scripts/libs/modernizr-2.6.1.min.js"></script>
 	</head>
 	<body id="">
@@ -43,6 +43,11 @@
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="/scripts/libs/jquery-1.8.2.min.js"><\/script>')</script>
+		<script src="/scripts/libs/response.min.js"></script>
+		<script>
+			Response.create({ mode: 'markup', prefix: 'r', breakpoints: [0,320,481,641,961,1025,1281] });
+			Response.create({ mode: 'src',  prefix: 'src', breakpoints: [0,320,481,641,961,1025,1281] });
+		</script>
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

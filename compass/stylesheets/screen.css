@@ -1,7 +1,8 @@
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+ */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000317}}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -596,6 +597,7 @@ table {
 }
 
 /* Calculate fluid ratio based on two dimensions (width/height) */
+/* Specify hi-res background for retina displays */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/sprite\/\*\.png}line{font-family:\0000358}}
 .sprite, .one, .two, .three {
   background: url('images/sprite-sf2cdc05a4f.png') no-repeat;
@@ -607,22 +609,29 @@ table {
 *  By: Eric A. Meyer and OddBird
 *  Site: susy.oddbird.net
 */
+/* 
+*  default layout values from 960 gird system 
+*/
 /* magic|static|fluid */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000312}}
+/* HD widescreen display (1200++) */
+/* desktop, landscape tablet (980-1119) */
+/* portrait tablet, landscape phone with retina display (601-979) */
+/* landscape phone and down (<=600) */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000313}}
 .sprite, .one, .two, .three {
   display: inline-block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000316}}
 .clearfix {
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_base\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_base\.scss}line{font-family:\0000375}}
 .clearfix:before {
   content: "";
   display: table;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_base\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_base\.scss}line{font-family:\0000379}}
 .clearfix:after {
   content: "\0020";
   display: table;
@@ -632,28 +641,28 @@ table {
   visibility: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000319}}
 .one {
   background-position: 0 0;
   height: 395px;
   width: 640px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000320}}
 .two {
   background-position: 0 -814px;
   height: 430px;
   width: 640px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000321}}
 .three {
   background-position: 0 -395px;
   height: 419px;
   width: 640px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000322}}
 figure.fluidratio {
   /* This element will have fluid ratio from 4:1 at 800px to 2:1 at 300px. */
   padding-top: 10%;
@@ -668,14 +677,114 @@ figure.fluidratio {
   background-image: url(about:blank);
 }
 
-@media (min-width: 30em) and (max-width: 60em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000327}}
+@media (min-width: 240px) and (max-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000329}}
   .page {
-    max-width: 61em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-left: auto;
     margin-right: auto;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(20%, rgba(100, 100, 225, 0.25)), color-stop(20%, rgba(0, 0, 0, 0)), color-stop(26.66667%, rgba(0, 0, 0, 0)), color-stop(26.66667%, rgba(100, 100, 225, 0.25)), color-stop(46.66667%, rgba(100, 100, 225, 0.25)), color-stop(46.66667%, rgba(0, 0, 0, 0)), color-stop(53.33333%, rgba(0, 0, 0, 0)), color-stop(53.33333%, rgba(100, 100, 225, 0.25)), color-stop(73.33333%, rgba(100, 100, 225, 0.25)), color-stop(73.33333%, rgba(0, 0, 0, 0)), color-stop(80.0%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 26.66667%, rgba(100, 100, 225, 0.25) 26.66667%, rgba(100, 100, 225, 0.25) 46.66667%, rgba(0, 0, 0, 0) 46.66667%, rgba(0, 0, 0, 0) 53.33333%, rgba(100, 100, 225, 0.25) 53.33333%, rgba(100, 100, 225, 0.25) 73.33333%, rgba(0, 0, 0, 0) 73.33333%, rgba(0, 0, 0, 0) 80.0%, rgba(100, 100, 225, 0.25) 80%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 26.66667%, rgba(100, 100, 225, 0.25) 26.66667%, rgba(100, 100, 225, 0.25) 46.66667%, rgba(0, 0, 0, 0) 46.66667%, rgba(0, 0, 0, 0) 53.33333%, rgba(100, 100, 225, 0.25) 53.33333%, rgba(100, 100, 225, 0.25) 73.33333%, rgba(0, 0, 0, 0) 73.33333%, rgba(0, 0, 0, 0) 80.0%, rgba(100, 100, 225, 0.25) 80%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 26.66667%, rgba(100, 100, 225, 0.25) 26.66667%, rgba(100, 100, 225, 0.25) 46.66667%, rgba(0, 0, 0, 0) 46.66667%, rgba(0, 0, 0, 0) 53.33333%, rgba(100, 100, 225, 0.25) 53.33333%, rgba(100, 100, 225, 0.25) 73.33333%, rgba(0, 0, 0, 0) 73.33333%, rgba(0, 0, 0, 0) 80.0%, rgba(100, 100, 225, 0.25) 80%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 26.66667%, rgba(100, 100, 225, 0.25) 26.66667%, rgba(100, 100, 225, 0.25) 46.66667%, rgba(0, 0, 0, 0) 46.66667%, rgba(0, 0, 0, 0) 53.33333%, rgba(100, 100, 225, 0.25) 53.33333%, rgba(100, 100, 225, 0.25) 73.33333%, rgba(0, 0, 0, 0) 73.33333%, rgba(0, 0, 0, 0) 80.0%, rgba(100, 100, 225, 0.25) 80%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+  .page:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000335}}
+  .page {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(9.67742%, rgba(100, 100, 225, 0.25)), color-stop(9.67742%, rgba(0, 0, 0, 0)), color-stop(12.90323%, rgba(0, 0, 0, 0)), color-stop(12.90323%, rgba(100, 100, 225, 0.25)), color-stop(22.58065%, rgba(100, 100, 225, 0.25)), color-stop(22.58065%, rgba(0, 0, 0, 0)), color-stop(25.80645%, rgba(0, 0, 0, 0)), color-stop(25.80645%, rgba(100, 100, 225, 0.25)), color-stop(35.48387%, rgba(100, 100, 225, 0.25)), color-stop(35.48387%, rgba(0, 0, 0, 0)), color-stop(38.70968%, rgba(0, 0, 0, 0)), color-stop(38.70968%, rgba(100, 100, 225, 0.25)), color-stop(48.3871%, rgba(100, 100, 225, 0.25)), color-stop(48.3871%, rgba(0, 0, 0, 0)), color-stop(51.6129%, rgba(0, 0, 0, 0)), color-stop(51.6129%, rgba(100, 100, 225, 0.25)), color-stop(61.29032%, rgba(100, 100, 225, 0.25)), color-stop(61.29032%, rgba(0, 0, 0, 0)), color-stop(64.51613%, rgba(0, 0, 0, 0)), color-stop(64.51613%, rgba(100, 100, 225, 0.25)), color-stop(74.19355%, rgba(100, 100, 225, 0.25)), color-stop(74.19355%, rgba(0, 0, 0, 0)), color-stop(77.41935%, rgba(0, 0, 0, 0)), color-stop(77.41935%, rgba(100, 100, 225, 0.25)), color-stop(87.09677%, rgba(100, 100, 225, 0.25)), color-stop(87.09677%, rgba(0, 0, 0, 0)), color-stop(90.32258%, rgba(0, 0, 0, 0)), color-stop(90.32258%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 9.67742%, rgba(0, 0, 0, 0) 9.67742%, rgba(0, 0, 0, 0) 12.90323%, rgba(100, 100, 225, 0.25) 12.90323%, rgba(100, 100, 225, 0.25) 22.58065%, rgba(0, 0, 0, 0) 22.58065%, rgba(0, 0, 0, 0) 25.80645%, rgba(100, 100, 225, 0.25) 25.80645%, rgba(100, 100, 225, 0.25) 35.48387%, rgba(0, 0, 0, 0) 35.48387%, rgba(0, 0, 0, 0) 38.70968%, rgba(100, 100, 225, 0.25) 38.70968%, rgba(100, 100, 225, 0.25) 48.3871%, rgba(0, 0, 0, 0) 48.3871%, rgba(0, 0, 0, 0) 51.6129%, rgba(100, 100, 225, 0.25) 51.6129%, rgba(100, 100, 225, 0.25) 61.29032%, rgba(0, 0, 0, 0) 61.29032%, rgba(0, 0, 0, 0) 64.51613%, rgba(100, 100, 225, 0.25) 64.51613%, rgba(100, 100, 225, 0.25) 74.19355%, rgba(0, 0, 0, 0) 74.19355%, rgba(0, 0, 0, 0) 77.41935%, rgba(100, 100, 225, 0.25) 77.41935%, rgba(100, 100, 225, 0.25) 87.09677%, rgba(0, 0, 0, 0) 87.09677%, rgba(0, 0, 0, 0) 90.32258%, rgba(100, 100, 225, 0.25) 90.32258%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 9.67742%, rgba(0, 0, 0, 0) 9.67742%, rgba(0, 0, 0, 0) 12.90323%, rgba(100, 100, 225, 0.25) 12.90323%, rgba(100, 100, 225, 0.25) 22.58065%, rgba(0, 0, 0, 0) 22.58065%, rgba(0, 0, 0, 0) 25.80645%, rgba(100, 100, 225, 0.25) 25.80645%, rgba(100, 100, 225, 0.25) 35.48387%, rgba(0, 0, 0, 0) 35.48387%, rgba(0, 0, 0, 0) 38.70968%, rgba(100, 100, 225, 0.25) 38.70968%, rgba(100, 100, 225, 0.25) 48.3871%, rgba(0, 0, 0, 0) 48.3871%, rgba(0, 0, 0, 0) 51.6129%, rgba(100, 100, 225, 0.25) 51.6129%, rgba(100, 100, 225, 0.25) 61.29032%, rgba(0, 0, 0, 0) 61.29032%, rgba(0, 0, 0, 0) 64.51613%, rgba(100, 100, 225, 0.25) 64.51613%, rgba(100, 100, 225, 0.25) 74.19355%, rgba(0, 0, 0, 0) 74.19355%, rgba(0, 0, 0, 0) 77.41935%, rgba(100, 100, 225, 0.25) 77.41935%, rgba(100, 100, 225, 0.25) 87.09677%, rgba(0, 0, 0, 0) 87.09677%, rgba(0, 0, 0, 0) 90.32258%, rgba(100, 100, 225, 0.25) 90.32258%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 9.67742%, rgba(0, 0, 0, 0) 9.67742%, rgba(0, 0, 0, 0) 12.90323%, rgba(100, 100, 225, 0.25) 12.90323%, rgba(100, 100, 225, 0.25) 22.58065%, rgba(0, 0, 0, 0) 22.58065%, rgba(0, 0, 0, 0) 25.80645%, rgba(100, 100, 225, 0.25) 25.80645%, rgba(100, 100, 225, 0.25) 35.48387%, rgba(0, 0, 0, 0) 35.48387%, rgba(0, 0, 0, 0) 38.70968%, rgba(100, 100, 225, 0.25) 38.70968%, rgba(100, 100, 225, 0.25) 48.3871%, rgba(0, 0, 0, 0) 48.3871%, rgba(0, 0, 0, 0) 51.6129%, rgba(100, 100, 225, 0.25) 51.6129%, rgba(100, 100, 225, 0.25) 61.29032%, rgba(0, 0, 0, 0) 61.29032%, rgba(0, 0, 0, 0) 64.51613%, rgba(100, 100, 225, 0.25) 64.51613%, rgba(100, 100, 225, 0.25) 74.19355%, rgba(0, 0, 0, 0) 74.19355%, rgba(0, 0, 0, 0) 77.41935%, rgba(100, 100, 225, 0.25) 77.41935%, rgba(100, 100, 225, 0.25) 87.09677%, rgba(0, 0, 0, 0) 87.09677%, rgba(0, 0, 0, 0) 90.32258%, rgba(100, 100, 225, 0.25) 90.32258%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 9.67742%, rgba(0, 0, 0, 0) 9.67742%, rgba(0, 0, 0, 0) 12.90323%, rgba(100, 100, 225, 0.25) 12.90323%, rgba(100, 100, 225, 0.25) 22.58065%, rgba(0, 0, 0, 0) 22.58065%, rgba(0, 0, 0, 0) 25.80645%, rgba(100, 100, 225, 0.25) 25.80645%, rgba(100, 100, 225, 0.25) 35.48387%, rgba(0, 0, 0, 0) 35.48387%, rgba(0, 0, 0, 0) 38.70968%, rgba(100, 100, 225, 0.25) 38.70968%, rgba(100, 100, 225, 0.25) 48.3871%, rgba(0, 0, 0, 0) 48.3871%, rgba(0, 0, 0, 0) 51.6129%, rgba(100, 100, 225, 0.25) 51.6129%, rgba(100, 100, 225, 0.25) 61.29032%, rgba(0, 0, 0, 0) 61.29032%, rgba(0, 0, 0, 0) 64.51613%, rgba(100, 100, 225, 0.25) 64.51613%, rgba(100, 100, 225, 0.25) 74.19355%, rgba(0, 0, 0, 0) 74.19355%, rgba(0, 0, 0, 0) 77.41935%, rgba(100, 100, 225, 0.25) 77.41935%, rgba(100, 100, 225, 0.25) 87.09677%, rgba(0, 0, 0, 0) 87.09677%, rgba(0, 0, 0, 0) 90.32258%, rgba(100, 100, 225, 0.25) 90.32258%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+  .page:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media (min-width: 980px) and (max-width: 1119px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000341}}
+  .page {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(6.38298%, rgba(100, 100, 225, 0.25)), color-stop(6.38298%, rgba(0, 0, 0, 0)), color-stop(8.51064%, rgba(0, 0, 0, 0)), color-stop(8.51064%, rgba(100, 100, 225, 0.25)), color-stop(14.89362%, rgba(100, 100, 225, 0.25)), color-stop(14.89362%, rgba(0, 0, 0, 0)), color-stop(17.02128%, rgba(0, 0, 0, 0)), color-stop(17.02128%, rgba(100, 100, 225, 0.25)), color-stop(23.40426%, rgba(100, 100, 225, 0.25)), color-stop(23.40426%, rgba(0, 0, 0, 0)), color-stop(25.53191%, rgba(0, 0, 0, 0)), color-stop(25.53191%, rgba(100, 100, 225, 0.25)), color-stop(31.91489%, rgba(100, 100, 225, 0.25)), color-stop(31.91489%, rgba(0, 0, 0, 0)), color-stop(34.04255%, rgba(0, 0, 0, 0)), color-stop(34.04255%, rgba(100, 100, 225, 0.25)), color-stop(40.42553%, rgba(100, 100, 225, 0.25)), color-stop(40.42553%, rgba(0, 0, 0, 0)), color-stop(42.55319%, rgba(0, 0, 0, 0)), color-stop(42.55319%, rgba(100, 100, 225, 0.25)), color-stop(48.93617%, rgba(100, 100, 225, 0.25)), color-stop(48.93617%, rgba(0, 0, 0, 0)), color-stop(51.06383%, rgba(0, 0, 0, 0)), color-stop(51.06383%, rgba(100, 100, 225, 0.25)), color-stop(57.44681%, rgba(100, 100, 225, 0.25)), color-stop(57.44681%, rgba(0, 0, 0, 0)), color-stop(59.57447%, rgba(0, 0, 0, 0)), color-stop(59.57447%, rgba(100, 100, 225, 0.25)), color-stop(65.95745%, rgba(100, 100, 225, 0.25)), color-stop(65.95745%, rgba(0, 0, 0, 0)), color-stop(68.08511%, rgba(0, 0, 0, 0)), color-stop(68.08511%, rgba(100, 100, 225, 0.25)), color-stop(74.46809%, rgba(100, 100, 225, 0.25)), color-stop(74.46809%, rgba(0, 0, 0, 0)), color-stop(76.59574%, rgba(0, 0, 0, 0)), color-stop(76.59574%, rgba(100, 100, 225, 0.25)), color-stop(82.97872%, rgba(100, 100, 225, 0.25)), color-stop(82.97872%, rgba(0, 0, 0, 0)), color-stop(85.10638%, rgba(0, 0, 0, 0)), color-stop(85.10638%, rgba(100, 100, 225, 0.25)), color-stop(91.48936%, rgba(100, 100, 225, 0.25)), color-stop(91.48936%, rgba(0, 0, 0, 0)), color-stop(93.61702%, rgba(0, 0, 0, 0)), color-stop(93.61702%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, rgba(100, 100, 225, 0.25) 8.51064%, rgba(100, 100, 225, 0.25) 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, rgba(100, 100, 225, 0.25) 17.02128%, rgba(100, 100, 225, 0.25) 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, rgba(100, 100, 225, 0.25) 25.53191%, rgba(100, 100, 225, 0.25) 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, rgba(100, 100, 225, 0.25) 34.04255%, rgba(100, 100, 225, 0.25) 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, rgba(100, 100, 225, 0.25) 42.55319%, rgba(100, 100, 225, 0.25) 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, rgba(100, 100, 225, 0.25) 51.06383%, rgba(100, 100, 225, 0.25) 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, rgba(100, 100, 225, 0.25) 59.57447%, rgba(100, 100, 225, 0.25) 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, rgba(100, 100, 225, 0.25) 68.08511%, rgba(100, 100, 225, 0.25) 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, rgba(100, 100, 225, 0.25) 76.59574%, rgba(100, 100, 225, 0.25) 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, rgba(100, 100, 225, 0.25) 85.10638%, rgba(100, 100, 225, 0.25) 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, rgba(100, 100, 225, 0.25) 93.61702%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, rgba(100, 100, 225, 0.25) 8.51064%, rgba(100, 100, 225, 0.25) 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, rgba(100, 100, 225, 0.25) 17.02128%, rgba(100, 100, 225, 0.25) 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, rgba(100, 100, 225, 0.25) 25.53191%, rgba(100, 100, 225, 0.25) 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, rgba(100, 100, 225, 0.25) 34.04255%, rgba(100, 100, 225, 0.25) 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, rgba(100, 100, 225, 0.25) 42.55319%, rgba(100, 100, 225, 0.25) 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, rgba(100, 100, 225, 0.25) 51.06383%, rgba(100, 100, 225, 0.25) 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, rgba(100, 100, 225, 0.25) 59.57447%, rgba(100, 100, 225, 0.25) 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, rgba(100, 100, 225, 0.25) 68.08511%, rgba(100, 100, 225, 0.25) 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, rgba(100, 100, 225, 0.25) 76.59574%, rgba(100, 100, 225, 0.25) 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, rgba(100, 100, 225, 0.25) 85.10638%, rgba(100, 100, 225, 0.25) 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, rgba(100, 100, 225, 0.25) 93.61702%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, rgba(100, 100, 225, 0.25) 8.51064%, rgba(100, 100, 225, 0.25) 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, rgba(100, 100, 225, 0.25) 17.02128%, rgba(100, 100, 225, 0.25) 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, rgba(100, 100, 225, 0.25) 25.53191%, rgba(100, 100, 225, 0.25) 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, rgba(100, 100, 225, 0.25) 34.04255%, rgba(100, 100, 225, 0.25) 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, rgba(100, 100, 225, 0.25) 42.55319%, rgba(100, 100, 225, 0.25) 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, rgba(100, 100, 225, 0.25) 51.06383%, rgba(100, 100, 225, 0.25) 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, rgba(100, 100, 225, 0.25) 59.57447%, rgba(100, 100, 225, 0.25) 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, rgba(100, 100, 225, 0.25) 68.08511%, rgba(100, 100, 225, 0.25) 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, rgba(100, 100, 225, 0.25) 76.59574%, rgba(100, 100, 225, 0.25) 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, rgba(100, 100, 225, 0.25) 85.10638%, rgba(100, 100, 225, 0.25) 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, rgba(100, 100, 225, 0.25) 93.61702%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, rgba(100, 100, 225, 0.25) 8.51064%, rgba(100, 100, 225, 0.25) 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, rgba(100, 100, 225, 0.25) 17.02128%, rgba(100, 100, 225, 0.25) 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, rgba(100, 100, 225, 0.25) 25.53191%, rgba(100, 100, 225, 0.25) 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, rgba(100, 100, 225, 0.25) 34.04255%, rgba(100, 100, 225, 0.25) 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, rgba(100, 100, 225, 0.25) 42.55319%, rgba(100, 100, 225, 0.25) 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, rgba(100, 100, 225, 0.25) 51.06383%, rgba(100, 100, 225, 0.25) 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, rgba(100, 100, 225, 0.25) 59.57447%, rgba(100, 100, 225, 0.25) 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, rgba(100, 100, 225, 0.25) 68.08511%, rgba(100, 100, 225, 0.25) 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, rgba(100, 100, 225, 0.25) 76.59574%, rgba(100, 100, 225, 0.25) 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, rgba(100, 100, 225, 0.25) 85.10638%, rgba(100, 100, 225, 0.25) 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, rgba(100, 100, 225, 0.25) 93.61702%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+  .page:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000347}}
+  .page {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(4.7619%, rgba(100, 100, 225, 0.25)), color-stop(4.7619%, rgba(0, 0, 0, 0)), color-stop(6.34921%, rgba(0, 0, 0, 0)), color-stop(6.34921%, rgba(100, 100, 225, 0.25)), color-stop(11.11111%, rgba(100, 100, 225, 0.25)), color-stop(11.11111%, rgba(0, 0, 0, 0)), color-stop(12.69841%, rgba(0, 0, 0, 0)), color-stop(12.69841%, rgba(100, 100, 225, 0.25)), color-stop(17.46032%, rgba(100, 100, 225, 0.25)), color-stop(17.46032%, rgba(0, 0, 0, 0)), color-stop(19.04762%, rgba(0, 0, 0, 0)), color-stop(19.04762%, rgba(100, 100, 225, 0.25)), color-stop(23.80952%, rgba(100, 100, 225, 0.25)), color-stop(23.80952%, rgba(0, 0, 0, 0)), color-stop(25.39683%, rgba(0, 0, 0, 0)), color-stop(25.39683%, rgba(100, 100, 225, 0.25)), color-stop(30.15873%, rgba(100, 100, 225, 0.25)), color-stop(30.15873%, rgba(0, 0, 0, 0)), color-stop(31.74603%, rgba(0, 0, 0, 0)), color-stop(31.74603%, rgba(100, 100, 225, 0.25)), color-stop(36.50794%, rgba(100, 100, 225, 0.25)), color-stop(36.50794%, rgba(0, 0, 0, 0)), color-stop(38.09524%, rgba(0, 0, 0, 0)), color-stop(38.09524%, rgba(100, 100, 225, 0.25)), color-stop(42.85714%, rgba(100, 100, 225, 0.25)), color-stop(42.85714%, rgba(0, 0, 0, 0)), color-stop(44.44444%, rgba(0, 0, 0, 0)), color-stop(44.44444%, rgba(100, 100, 225, 0.25)), color-stop(49.20635%, rgba(100, 100, 225, 0.25)), color-stop(49.20635%, rgba(0, 0, 0, 0)), color-stop(50.79365%, rgba(0, 0, 0, 0)), color-stop(50.79365%, rgba(100, 100, 225, 0.25)), color-stop(55.55556%, rgba(100, 100, 225, 0.25)), color-stop(55.55556%, rgba(0, 0, 0, 0)), color-stop(57.14286%, rgba(0, 0, 0, 0)), color-stop(57.14286%, rgba(100, 100, 225, 0.25)), color-stop(61.90476%, rgba(100, 100, 225, 0.25)), color-stop(61.90476%, rgba(0, 0, 0, 0)), color-stop(63.49206%, rgba(0, 0, 0, 0)), color-stop(63.49206%, rgba(100, 100, 225, 0.25)), color-stop(68.25397%, rgba(100, 100, 225, 0.25)), color-stop(68.25397%, rgba(0, 0, 0, 0)), color-stop(69.84127%, rgba(0, 0, 0, 0)), color-stop(69.84127%, rgba(100, 100, 225, 0.25)), color-stop(74.60317%, rgba(100, 100, 225, 0.25)), color-stop(74.60317%, rgba(0, 0, 0, 0)), color-stop(76.19048%, rgba(0, 0, 0, 0)), color-stop(76.19048%, rgba(100, 100, 225, 0.25)), color-stop(80.95238%, rgba(100, 100, 225, 0.25)), color-stop(80.95238%, rgba(0, 0, 0, 0)), color-stop(82.53968%, rgba(0, 0, 0, 0)), color-stop(82.53968%, rgba(100, 100, 225, 0.25)), color-stop(87.30159%, rgba(100, 100, 225, 0.25)), color-stop(87.30159%, rgba(0, 0, 0, 0)), color-stop(88.88889%, rgba(0, 0, 0, 0)), color-stop(88.88889%, rgba(100, 100, 225, 0.25)), color-stop(93.65079%, rgba(100, 100, 225, 0.25)), color-stop(93.65079%, rgba(0, 0, 0, 0)), color-stop(95.2381%, rgba(0, 0, 0, 0)), color-stop(95.2381%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 4.7619%, rgba(0, 0, 0, 0) 4.7619%, rgba(0, 0, 0, 0) 6.34921%, rgba(100, 100, 225, 0.25) 6.34921%, rgba(100, 100, 225, 0.25) 11.11111%, rgba(0, 0, 0, 0) 11.11111%, rgba(0, 0, 0, 0) 12.69841%, rgba(100, 100, 225, 0.25) 12.69841%, rgba(100, 100, 225, 0.25) 17.46032%, rgba(0, 0, 0, 0) 17.46032%, rgba(0, 0, 0, 0) 19.04762%, rgba(100, 100, 225, 0.25) 19.04762%, rgba(100, 100, 225, 0.25) 23.80952%, rgba(0, 0, 0, 0) 23.80952%, rgba(0, 0, 0, 0) 25.39683%, rgba(100, 100, 225, 0.25) 25.39683%, rgba(100, 100, 225, 0.25) 30.15873%, rgba(0, 0, 0, 0) 30.15873%, rgba(0, 0, 0, 0) 31.74603%, rgba(100, 100, 225, 0.25) 31.74603%, rgba(100, 100, 225, 0.25) 36.50794%, rgba(0, 0, 0, 0) 36.50794%, rgba(0, 0, 0, 0) 38.09524%, rgba(100, 100, 225, 0.25) 38.09524%, rgba(100, 100, 225, 0.25) 42.85714%, rgba(0, 0, 0, 0) 42.85714%, rgba(0, 0, 0, 0) 44.44444%, rgba(100, 100, 225, 0.25) 44.44444%, rgba(100, 100, 225, 0.25) 49.20635%, rgba(0, 0, 0, 0) 49.20635%, rgba(0, 0, 0, 0) 50.79365%, rgba(100, 100, 225, 0.25) 50.79365%, rgba(100, 100, 225, 0.25) 55.55556%, rgba(0, 0, 0, 0) 55.55556%, rgba(0, 0, 0, 0) 57.14286%, rgba(100, 100, 225, 0.25) 57.14286%, rgba(100, 100, 225, 0.25) 61.90476%, rgba(0, 0, 0, 0) 61.90476%, rgba(0, 0, 0, 0) 63.49206%, rgba(100, 100, 225, 0.25) 63.49206%, rgba(100, 100, 225, 0.25) 68.25397%, rgba(0, 0, 0, 0) 68.25397%, rgba(0, 0, 0, 0) 69.84127%, rgba(100, 100, 225, 0.25) 69.84127%, rgba(100, 100, 225, 0.25) 74.60317%, rgba(0, 0, 0, 0) 74.60317%, rgba(0, 0, 0, 0) 76.19048%, rgba(100, 100, 225, 0.25) 76.19048%, rgba(100, 100, 225, 0.25) 80.95238%, rgba(0, 0, 0, 0) 80.95238%, rgba(0, 0, 0, 0) 82.53968%, rgba(100, 100, 225, 0.25) 82.53968%, rgba(100, 100, 225, 0.25) 87.30159%, rgba(0, 0, 0, 0) 87.30159%, rgba(0, 0, 0, 0) 88.88889%, rgba(100, 100, 225, 0.25) 88.88889%, rgba(100, 100, 225, 0.25) 93.65079%, rgba(0, 0, 0, 0) 93.65079%, rgba(0, 0, 0, 0) 95.2381%, rgba(100, 100, 225, 0.25) 95.2381%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 4.7619%, rgba(0, 0, 0, 0) 4.7619%, rgba(0, 0, 0, 0) 6.34921%, rgba(100, 100, 225, 0.25) 6.34921%, rgba(100, 100, 225, 0.25) 11.11111%, rgba(0, 0, 0, 0) 11.11111%, rgba(0, 0, 0, 0) 12.69841%, rgba(100, 100, 225, 0.25) 12.69841%, rgba(100, 100, 225, 0.25) 17.46032%, rgba(0, 0, 0, 0) 17.46032%, rgba(0, 0, 0, 0) 19.04762%, rgba(100, 100, 225, 0.25) 19.04762%, rgba(100, 100, 225, 0.25) 23.80952%, rgba(0, 0, 0, 0) 23.80952%, rgba(0, 0, 0, 0) 25.39683%, rgba(100, 100, 225, 0.25) 25.39683%, rgba(100, 100, 225, 0.25) 30.15873%, rgba(0, 0, 0, 0) 30.15873%, rgba(0, 0, 0, 0) 31.74603%, rgba(100, 100, 225, 0.25) 31.74603%, rgba(100, 100, 225, 0.25) 36.50794%, rgba(0, 0, 0, 0) 36.50794%, rgba(0, 0, 0, 0) 38.09524%, rgba(100, 100, 225, 0.25) 38.09524%, rgba(100, 100, 225, 0.25) 42.85714%, rgba(0, 0, 0, 0) 42.85714%, rgba(0, 0, 0, 0) 44.44444%, rgba(100, 100, 225, 0.25) 44.44444%, rgba(100, 100, 225, 0.25) 49.20635%, rgba(0, 0, 0, 0) 49.20635%, rgba(0, 0, 0, 0) 50.79365%, rgba(100, 100, 225, 0.25) 50.79365%, rgba(100, 100, 225, 0.25) 55.55556%, rgba(0, 0, 0, 0) 55.55556%, rgba(0, 0, 0, 0) 57.14286%, rgba(100, 100, 225, 0.25) 57.14286%, rgba(100, 100, 225, 0.25) 61.90476%, rgba(0, 0, 0, 0) 61.90476%, rgba(0, 0, 0, 0) 63.49206%, rgba(100, 100, 225, 0.25) 63.49206%, rgba(100, 100, 225, 0.25) 68.25397%, rgba(0, 0, 0, 0) 68.25397%, rgba(0, 0, 0, 0) 69.84127%, rgba(100, 100, 225, 0.25) 69.84127%, rgba(100, 100, 225, 0.25) 74.60317%, rgba(0, 0, 0, 0) 74.60317%, rgba(0, 0, 0, 0) 76.19048%, rgba(100, 100, 225, 0.25) 76.19048%, rgba(100, 100, 225, 0.25) 80.95238%, rgba(0, 0, 0, 0) 80.95238%, rgba(0, 0, 0, 0) 82.53968%, rgba(100, 100, 225, 0.25) 82.53968%, rgba(100, 100, 225, 0.25) 87.30159%, rgba(0, 0, 0, 0) 87.30159%, rgba(0, 0, 0, 0) 88.88889%, rgba(100, 100, 225, 0.25) 88.88889%, rgba(100, 100, 225, 0.25) 93.65079%, rgba(0, 0, 0, 0) 93.65079%, rgba(0, 0, 0, 0) 95.2381%, rgba(100, 100, 225, 0.25) 95.2381%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 4.7619%, rgba(0, 0, 0, 0) 4.7619%, rgba(0, 0, 0, 0) 6.34921%, rgba(100, 100, 225, 0.25) 6.34921%, rgba(100, 100, 225, 0.25) 11.11111%, rgba(0, 0, 0, 0) 11.11111%, rgba(0, 0, 0, 0) 12.69841%, rgba(100, 100, 225, 0.25) 12.69841%, rgba(100, 100, 225, 0.25) 17.46032%, rgba(0, 0, 0, 0) 17.46032%, rgba(0, 0, 0, 0) 19.04762%, rgba(100, 100, 225, 0.25) 19.04762%, rgba(100, 100, 225, 0.25) 23.80952%, rgba(0, 0, 0, 0) 23.80952%, rgba(0, 0, 0, 0) 25.39683%, rgba(100, 100, 225, 0.25) 25.39683%, rgba(100, 100, 225, 0.25) 30.15873%, rgba(0, 0, 0, 0) 30.15873%, rgba(0, 0, 0, 0) 31.74603%, rgba(100, 100, 225, 0.25) 31.74603%, rgba(100, 100, 225, 0.25) 36.50794%, rgba(0, 0, 0, 0) 36.50794%, rgba(0, 0, 0, 0) 38.09524%, rgba(100, 100, 225, 0.25) 38.09524%, rgba(100, 100, 225, 0.25) 42.85714%, rgba(0, 0, 0, 0) 42.85714%, rgba(0, 0, 0, 0) 44.44444%, rgba(100, 100, 225, 0.25) 44.44444%, rgba(100, 100, 225, 0.25) 49.20635%, rgba(0, 0, 0, 0) 49.20635%, rgba(0, 0, 0, 0) 50.79365%, rgba(100, 100, 225, 0.25) 50.79365%, rgba(100, 100, 225, 0.25) 55.55556%, rgba(0, 0, 0, 0) 55.55556%, rgba(0, 0, 0, 0) 57.14286%, rgba(100, 100, 225, 0.25) 57.14286%, rgba(100, 100, 225, 0.25) 61.90476%, rgba(0, 0, 0, 0) 61.90476%, rgba(0, 0, 0, 0) 63.49206%, rgba(100, 100, 225, 0.25) 63.49206%, rgba(100, 100, 225, 0.25) 68.25397%, rgba(0, 0, 0, 0) 68.25397%, rgba(0, 0, 0, 0) 69.84127%, rgba(100, 100, 225, 0.25) 69.84127%, rgba(100, 100, 225, 0.25) 74.60317%, rgba(0, 0, 0, 0) 74.60317%, rgba(0, 0, 0, 0) 76.19048%, rgba(100, 100, 225, 0.25) 76.19048%, rgba(100, 100, 225, 0.25) 80.95238%, rgba(0, 0, 0, 0) 80.95238%, rgba(0, 0, 0, 0) 82.53968%, rgba(100, 100, 225, 0.25) 82.53968%, rgba(100, 100, 225, 0.25) 87.30159%, rgba(0, 0, 0, 0) 87.30159%, rgba(0, 0, 0, 0) 88.88889%, rgba(100, 100, 225, 0.25) 88.88889%, rgba(100, 100, 225, 0.25) 93.65079%, rgba(0, 0, 0, 0) 93.65079%, rgba(0, 0, 0, 0) 95.2381%, rgba(100, 100, 225, 0.25) 95.2381%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 4.7619%, rgba(0, 0, 0, 0) 4.7619%, rgba(0, 0, 0, 0) 6.34921%, rgba(100, 100, 225, 0.25) 6.34921%, rgba(100, 100, 225, 0.25) 11.11111%, rgba(0, 0, 0, 0) 11.11111%, rgba(0, 0, 0, 0) 12.69841%, rgba(100, 100, 225, 0.25) 12.69841%, rgba(100, 100, 225, 0.25) 17.46032%, rgba(0, 0, 0, 0) 17.46032%, rgba(0, 0, 0, 0) 19.04762%, rgba(100, 100, 225, 0.25) 19.04762%, rgba(100, 100, 225, 0.25) 23.80952%, rgba(0, 0, 0, 0) 23.80952%, rgba(0, 0, 0, 0) 25.39683%, rgba(100, 100, 225, 0.25) 25.39683%, rgba(100, 100, 225, 0.25) 30.15873%, rgba(0, 0, 0, 0) 30.15873%, rgba(0, 0, 0, 0) 31.74603%, rgba(100, 100, 225, 0.25) 31.74603%, rgba(100, 100, 225, 0.25) 36.50794%, rgba(0, 0, 0, 0) 36.50794%, rgba(0, 0, 0, 0) 38.09524%, rgba(100, 100, 225, 0.25) 38.09524%, rgba(100, 100, 225, 0.25) 42.85714%, rgba(0, 0, 0, 0) 42.85714%, rgba(0, 0, 0, 0) 44.44444%, rgba(100, 100, 225, 0.25) 44.44444%, rgba(100, 100, 225, 0.25) 49.20635%, rgba(0, 0, 0, 0) 49.20635%, rgba(0, 0, 0, 0) 50.79365%, rgba(100, 100, 225, 0.25) 50.79365%, rgba(100, 100, 225, 0.25) 55.55556%, rgba(0, 0, 0, 0) 55.55556%, rgba(0, 0, 0, 0) 57.14286%, rgba(100, 100, 225, 0.25) 57.14286%, rgba(100, 100, 225, 0.25) 61.90476%, rgba(0, 0, 0, 0) 61.90476%, rgba(0, 0, 0, 0) 63.49206%, rgba(100, 100, 225, 0.25) 63.49206%, rgba(100, 100, 225, 0.25) 68.25397%, rgba(0, 0, 0, 0) 68.25397%, rgba(0, 0, 0, 0) 69.84127%, rgba(100, 100, 225, 0.25) 69.84127%, rgba(100, 100, 225, 0.25) 74.60317%, rgba(0, 0, 0, 0) 74.60317%, rgba(0, 0, 0, 0) 76.19048%, rgba(100, 100, 225, 0.25) 76.19048%, rgba(100, 100, 225, 0.25) 80.95238%, rgba(0, 0, 0, 0) 80.95238%, rgba(0, 0, 0, 0) 82.53968%, rgba(100, 100, 225, 0.25) 82.53968%, rgba(100, 100, 225, 0.25) 87.30159%, rgba(0, 0, 0, 0) 87.30159%, rgba(0, 0, 0, 0) 88.88889%, rgba(100, 100, 225, 0.25) 88.88889%, rgba(100, 100, 225, 0.25) 93.65079%, rgba(0, 0, 0, 0) 93.65079%, rgba(0, 0, 0, 0) 95.2381%, rgba(100, 100, 225, 0.25) 95.2381%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
   .page:after {

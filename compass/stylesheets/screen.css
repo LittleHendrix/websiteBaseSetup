@@ -1,8 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Pontano+Sans|Metrophobic);
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
  */
+/*	FONT STACK
+*/
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000317}}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -161,6 +164,7 @@ textarea {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\0000392}}
 body {
   margin: 0;
+  text-rendering: optimizeLegibility;
 }
 
 /* ==========================================================================
@@ -169,7 +173,7 @@ body {
 /*
  * Addresses `outline` inconsistency between Chrome and other browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003105}}
 a:focus {
   outline: thin dotted;
 }
@@ -177,7 +181,7 @@ a:focus {
 /*
  * Improves readability when focused and also mouse hovered in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003113}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003114}}
 a:active,
 a:hover {
   outline: 0;
@@ -191,37 +195,37 @@ a:hover {
  * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
  * and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003128}}
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003133}}
 h2 {
   font-size: 1.5em;
   margin: 0.83em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003137}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003138}}
 h3 {
   font-size: 1.17em;
   margin: 1em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003142}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003143}}
 h4 {
   font-size: 1em;
   margin: 1.33em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003147}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003148}}
 h5 {
   font-size: 0.83em;
   margin: 1.67em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003152}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003153}}
 h6 {
   font-size: 0.75em;
   margin: 2.33em 0;
@@ -230,7 +234,7 @@ h6 {
 /*
  * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003162}}
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -238,13 +242,13 @@ abbr[title] {
 /*
  * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003171}}
 b,
 strong {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003174}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003175}}
 blockquote {
   margin: 1em 40px;
 }
@@ -252,7 +256,7 @@ blockquote {
 /*
  * Addresses styling not present in Safari 5 and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003183}}
 dfn {
   font-style: italic;
 }
@@ -260,7 +264,7 @@ dfn {
 /*
  * Addresses styling not present in IE 6/7/8/9.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003190}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003191}}
 mark {
   background: #ff0;
   color: #000;
@@ -269,7 +273,7 @@ mark {
 /*
  * Addresses margins set differently in IE 6/7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003200}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003201}}
 p,
 pre {
   margin: 1em 0;
@@ -278,7 +282,7 @@ pre {
 /*
  * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003211}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003212}}
 code,
 kbd,
 pre,
@@ -291,7 +295,7 @@ samp {
 /*
  * Improves readability of pre-formatted text in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003221}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003222}}
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -301,7 +305,7 @@ pre {
 /*
  * Addresses CSS quotes not supported in IE 6/7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003231}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003232}}
 q {
   quotes: none;
 }
@@ -309,7 +313,7 @@ q {
 /*
  * Addresses `quotes` property not supported in Safari 4.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003240}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003241}}
 q:before,
 q:after {
   content: '';
@@ -319,7 +323,7 @@ q:after {
 /*
  * Addresses inconsistent and variable font size in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003249}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003250}}
 small {
   font-size: 80%;
 }
@@ -327,7 +331,7 @@ small {
 /*
  * Prevents `sub` and `sup` affecting `line-height` in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003258}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003259}}
 sub,
 sup {
   font-size: 75%;
@@ -336,12 +340,12 @@ sup {
   vertical-align: baseline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003265}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003266}}
 sup {
   top: -0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003269}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003270}}
 sub {
   bottom: -0.25em;
 }
@@ -352,7 +356,7 @@ sub {
 /*
  * Addresses margins set differently in IE 6/7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003284}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003285}}
 dl,
 menu,
 ol,
@@ -360,7 +364,7 @@ ul {
   margin: 1em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003288}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003289}}
 dd {
   margin: 0 0 0 40px;
 }
@@ -368,7 +372,7 @@ dd {
 /*
  * Addresses paddings set differently in IE 6/7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003298}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003299}}
 menu,
 ol,
 ul {
@@ -378,7 +382,7 @@ ul {
 /*
  * Corrects list images handled incorrectly in IE 7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003307}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003308}}
 nav ul,
 nav ol {
   list-style: none;
@@ -392,7 +396,7 @@ nav ol {
  * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improves image quality when scaled in IE 7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003322}}
 img {
   border: 0;
   /* 1 */
@@ -403,7 +407,7 @@ img {
 /*
  * Corrects overflow displayed oddly in IE 9.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003331}}
 svg:not(:root) {
   overflow: hidden;
 }
@@ -414,7 +418,7 @@ svg:not(:root) {
 /*
  * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003343}}
 figure {
   margin: 0;
 }
@@ -425,7 +429,7 @@ figure {
 /*
  * Corrects margin displayed oddly in IE 6/7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003355}}
 form {
   margin: 0;
 }
@@ -433,7 +437,7 @@ form {
 /*
  * Define consistent border, margin, and padding.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003363}}
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -445,7 +449,7 @@ fieldset {
  * 2. Corrects text not wrapping in Firefox 3.
  * 3. Corrects alignment displayed oddly in IE 6/7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003375}}
 legend {
   border: 0;
   /* 1 */
@@ -462,7 +466,7 @@ legend {
  *    and Chrome.
  * 3. Improves appearance and consistency in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003392}}
 button,
 input,
 select,
@@ -481,7 +485,7 @@ textarea {
  * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003404}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003405}}
 button,
 input {
   line-height: normal;
@@ -496,7 +500,7 @@ input {
  * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003421}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003422}}
 button,
 html input[type="button"],
 input[type="reset"],
@@ -512,7 +516,7 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003432}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003433}}
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -524,7 +528,7 @@ input[disabled] {
  * 3. Removes excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003444}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003445}}
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -542,7 +546,7 @@ input[type="radio"] {
  * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003457}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003458}}
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -556,7 +560,7 @@ input[type="search"] {
  * Removes inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003470}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003471}}
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -565,7 +569,7 @@ input[type="search"]::-webkit-search-decoration {
 /*
  * Removes inner padding and border in Firefox 3+.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003479}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003480}}
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -576,7 +580,7 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE 6/7/8/9.
  * 2. Improves readability and alignment in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003489}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003490}}
 textarea {
   overflow: auto;
   /* 1 */
@@ -590,7 +594,7 @@ textarea {
 /*
  * Remove most spacing between table cells.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003502}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003503}}
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -617,21 +621,32 @@ table {
 /* desktop, landscape tablet (980-1119) */
 /* portrait tablet, landscape phone with retina display (601-979) */
 /* landscape phone and down (<=600) */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000313}}
+/*	COLOR CHART
+----------------------------------------------- */
+/*	TYPOGRAPHY
+-----------------------------------------------
+Modular scale ratio = 1:1.618 - Golden ratio
+http://modularscale.com/scale/?px1=16&px2=13&ra1=1.618&ra2=0
+16px @ 1:1.618
+13px @ 1:1.618
+----------------------------------------------- */
+/*	UTILITY
+----------------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000333}}
 .sprite, .one, .two, .three {
   display: inline-block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000336}}
 .clearfix {
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_base\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_base\.scss}line{font-family:\0000389}}
 .clearfix:before {
   content: "";
   display: table;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_base\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_base\.scss}line{font-family:\0000393}}
 .clearfix:after {
   content: "\0020";
   display: table;
@@ -641,28 +656,77 @@ table {
   visibility: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000319}}
+/*	GENERAL
+----------------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000342}}
+body {
+  font: normal normal normal 16px/1.618 "Pontano Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000345}}
+p {
+  font-size: 0.813em;
+  /* = 13px */
+  line-height: 1.135;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000349}}
+h1 {
+  font-size: 1.315em;
+  /* = 21px */
+  margin: 0.618em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000353}}
+h2 {
+  font-size: 2.127em;
+  /* = 34px */
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000357}}
+h3 {
+  font-size: 1.17em;
+  /* = 18px */
+  margin: 1.315em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000361}}
+h5 {
+  font-size: 0.813rem;
+  /* = 13px */
+  margin: 1.618em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000365}}
+h6 {
+  font-size: 0.688rem;
+  /* = 11px */
+  margin: 2.127em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000370}}
 .one {
   background-position: 0 0;
   height: 395px;
   width: 640px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000371}}
 .two {
   background-position: 0 -814px;
   height: 430px;
   width: 640px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000372}}
 .three {
   background-position: 0 -395px;
   height: 419px;
   width: 640px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000373}}
 figure.fluidratio {
   /* This element will have fluid ratio from 4:1 at 800px to 2:1 at 300px. */
   padding-top: 10%;
@@ -677,8 +741,10 @@ figure.fluidratio {
   background-image: url(about:blank);
 }
 
+/*	DEVICE SPECIFIC LAYOUTS
+----------------------------------------------- */
 @media (min-width: 240px) and (max-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000385}}
   .page {
     padding-left: 10px;
     padding-right: 10px;
@@ -707,7 +773,7 @@ figure.fluidratio {
   }
 }
 @media (min-width: 601px) and (max-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000391}}
   .page {
     padding-left: 10px;
     padding-right: 10px;
@@ -736,7 +802,7 @@ figure.fluidratio {
   }
 }
 @media (min-width: 980px) and (max-width: 1119px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000397}}
   .page {
     padding-left: 10px;
     padding-right: 10px;
@@ -765,7 +831,7 @@ figure.fluidratio {
   }
 }
 @media (min-width: 1200px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\00003103}}
   .page {
     padding-left: 10px;
     padding-right: 10px;

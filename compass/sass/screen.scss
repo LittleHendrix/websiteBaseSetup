@@ -9,13 +9,64 @@
 /*@include all-sprite-sprites;*/
 
 @import "susy_defaults";
+@import url(http://fonts.googleapis.com/css?family=Pontano+Sans|Metrophobic);
 
+/*	COLOR CHART
+----------------------------------------------- */
+$red	: #ad1e25;
+$ink	: #31363c;
+
+/*	TYPOGRAPHY
+-----------------------------------------------
+Modular scale ratio = 1:1.618 - Golden ratio
+http://modularscale.com/scale/?px1=16&px2=13&ra1=1.618&ra2=0
+16px @ 1:1.618
+13px @ 1:1.618
+----------------------------------------------- */
+
+$font-body		: "Pontano Sans", $lucida;
+$font-heading	: "Metrophobic", $segoe;
+
+
+/*	UTILITY
+----------------------------------------------- */
 .sprite {
 	display: inline-block;
 }
 .clearfix {
 	@include myClearfix;
 }
+
+/*	GENERAL
+----------------------------------------------- */
+body {
+	font: normal normal normal 16px/1.618 $font-body;
+}
+p {
+	font-size: 0.813em; /* = 13px */
+	line-height: 1.135;
+}
+h1 {
+	font-size: 1.315em; /* = 21px */
+	margin: 0.618em 0;
+}
+h2 {
+	font-size: 2.127em; /* = 34px */
+	margin: 0;
+}
+h3 {
+	font-size: 1.17em; /* = 18px */
+	margin: 1.315em 0;
+}
+h5 {
+	font-size: 0.813rem; /* = 13px */
+	margin: 1.618em 0;
+}
+h6 {
+	font-size: 0.688rem; /* = 11px */
+	margin: 2.127em 0;
+}
+
 .one { @include sprite-sprite(one); }
 .two { @include sprite-sprite(two); }
 .three { @include sprite-sprite(three); }
@@ -25,6 +76,11 @@ figure.fluidratio {
 
   background-image: url(about:blank);
 }
+
+
+/*	DEVICE SPECIFIC LAYOUTS
+----------------------------------------------- */
+
 @include at-breakpoint($layout-mobile) {
 	.page {
 		@include container;

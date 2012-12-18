@@ -1,7 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Pontano+Sans|Metrophobic);
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+ */
+/*	FONT STACK
+*/
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000317}}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -160,6 +164,7 @@ textarea {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\0000392}}
 body {
   margin: 0;
+  text-rendering: optimizeLegibility;
 }
 
 /* ==========================================================================
@@ -168,7 +173,7 @@ body {
 /*
  * Addresses `outline` inconsistency between Chrome and other browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003105}}
 a:focus {
   outline: thin dotted;
 }
@@ -176,10 +181,18 @@ a:focus {
 /*
  * Improves readability when focused and also mouse hovered in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003113}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003114}}
 a:active,
 a:hover {
   outline: 0;
+}
+
+/*
+ * Remove the blue link image border in IE.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003122}}
+a img {
+  border: none;
 }
 
 /* ==========================================================================
@@ -190,37 +203,37 @@ a:hover {
  * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
  * and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003136}}
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003141}}
 h2 {
   font-size: 1.5em;
   margin: 0.83em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003137}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003146}}
 h3 {
   font-size: 1.17em;
   margin: 1em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003142}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003151}}
 h4 {
   font-size: 1em;
   margin: 1.33em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003147}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003156}}
 h5 {
   font-size: 0.83em;
   margin: 1.67em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003152}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003161}}
 h6 {
   font-size: 0.75em;
   margin: 2.33em 0;
@@ -229,7 +242,7 @@ h6 {
 /*
  * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003170}}
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -237,13 +250,13 @@ abbr[title] {
 /*
  * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003179}}
 b,
 strong {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003174}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003183}}
 blockquote {
   margin: 1em 40px;
 }
@@ -251,7 +264,7 @@ blockquote {
 /*
  * Addresses styling not present in Safari 5 and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003191}}
 dfn {
   font-style: italic;
 }
@@ -259,7 +272,7 @@ dfn {
 /*
  * Addresses styling not present in IE 6/7/8/9.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003190}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003199}}
 mark {
   background: #ff0;
   color: #000;
@@ -268,7 +281,7 @@ mark {
 /*
  * Addresses margins set differently in IE 6/7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003200}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003209}}
 p,
 pre {
   margin: 1em 0;
@@ -277,7 +290,7 @@ pre {
 /*
  * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003211}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003220}}
 code,
 kbd,
 pre,
@@ -290,7 +303,7 @@ samp {
 /*
  * Improves readability of pre-formatted text in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003221}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003230}}
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -300,7 +313,7 @@ pre {
 /*
  * Addresses CSS quotes not supported in IE 6/7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003231}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003240}}
 q {
   quotes: none;
 }
@@ -308,7 +321,7 @@ q {
 /*
  * Addresses `quotes` property not supported in Safari 4.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003240}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003249}}
 q:before,
 q:after {
   content: '';
@@ -318,7 +331,7 @@ q:after {
 /*
  * Addresses inconsistent and variable font size in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003249}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003258}}
 small {
   font-size: 80%;
 }
@@ -326,7 +339,7 @@ small {
 /*
  * Prevents `sub` and `sup` affecting `line-height` in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003258}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003267}}
 sub,
 sup {
   font-size: 75%;
@@ -335,12 +348,12 @@ sup {
   vertical-align: baseline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003265}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003274}}
 sup {
   top: -0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003269}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003278}}
 sub {
   bottom: -0.25em;
 }
@@ -351,7 +364,7 @@ sub {
 /*
  * Addresses margins set differently in IE 6/7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003284}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003293}}
 dl,
 menu,
 ol,
@@ -359,7 +372,7 @@ ul {
   margin: 1em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003288}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003297}}
 dd {
   margin: 0 0 0 40px;
 }
@@ -367,7 +380,7 @@ dd {
 /*
  * Addresses paddings set differently in IE 6/7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003298}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003307}}
 menu,
 ol,
 ul {
@@ -377,7 +390,7 @@ ul {
 /*
  * Corrects list images handled incorrectly in IE 7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003307}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003316}}
 nav ul,
 nav ol {
   list-style: none;
@@ -391,7 +404,7 @@ nav ol {
  * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improves image quality when scaled in IE 7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003330}}
 img {
   border: 0;
   /* 1 */
@@ -402,7 +415,7 @@ img {
 /*
  * Corrects overflow displayed oddly in IE 9.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003339}}
 svg:not(:root) {
   overflow: hidden;
 }
@@ -413,7 +426,7 @@ svg:not(:root) {
 /*
  * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003351}}
 figure {
   margin: 0;
 }
@@ -424,7 +437,7 @@ figure {
 /*
  * Corrects margin displayed oddly in IE 6/7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003363}}
 form {
   margin: 0;
 }
@@ -432,7 +445,7 @@ form {
 /*
  * Define consistent border, margin, and padding.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003371}}
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -444,7 +457,7 @@ fieldset {
  * 2. Corrects text not wrapping in Firefox 3.
  * 3. Corrects alignment displayed oddly in IE 6/7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003383}}
 legend {
   border: 0;
   /* 1 */
@@ -461,7 +474,7 @@ legend {
  *    and Chrome.
  * 3. Improves appearance and consistency in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003400}}
 button,
 input,
 select,
@@ -480,7 +493,7 @@ textarea {
  * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003404}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003413}}
 button,
 input {
   line-height: normal;
@@ -495,7 +508,7 @@ input {
  * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003421}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003430}}
 button,
 html input[type="button"],
 input[type="reset"],
@@ -511,7 +524,7 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003432}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003441}}
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -523,7 +536,7 @@ input[disabled] {
  * 3. Removes excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003444}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003453}}
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -541,7 +554,7 @@ input[type="radio"] {
  * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003457}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003466}}
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -555,7 +568,7 @@ input[type="search"] {
  * Removes inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003470}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003479}}
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -564,7 +577,7 @@ input[type="search"]::-webkit-search-decoration {
 /*
  * Removes inner padding and border in Firefox 3+.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003479}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003488}}
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -575,7 +588,7 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE 6/7/8/9.
  * 2. Improves readability and alignment in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003489}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003498}}
 textarea {
   overflow: auto;
   /* 1 */
@@ -589,13 +602,14 @@ textarea {
 /*
  * Remove most spacing between table cells.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003502}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_normalize\.scss}line{font-family:\00003511}}
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 /* Calculate fluid ratio based on two dimensions (width/height) */
+/* Specify hi-res background for retina displays */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/sprite\/\*\.png}line{font-family:\0000358}}
 .sprite, .one, .two, .three {
   background: url('images/sprite-sf2cdc05a4f.png') no-repeat;
@@ -607,22 +621,75 @@ table {
 *  By: Eric A. Meyer and OddBird
 *  Site: susy.oddbird.net
 */
+/* 
+*  default layout values from 960 gird system 
+*/
 /* magic|static|fluid */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000312}}
+/* HD widescreen display (1200++) */
+/* desktop, landscape tablet (980-1119) */
+/* portrait tablet, landscape phone with retina display (601-979) */
+/* landscape phone and down (<=600) */
+/*	COLOR CHART
+----------------------------------------------- */
+/*	TYPOGRAPHY VARS
+-----------------------------------------------
+Modular scale ratio = 1:1.618 - Golden ratio
+http://modularscale.com/scale/?px1=16&px2=13&ra1=1.618&ra2=0
+16px @ 1:1.618
+13px @ 1:1.618
+----------------------------------------------- */
+/*	UTILITY & OVERWRITES
+----------------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000334}}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000338}}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000342}}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000347}}
+textarea {
+  resize: vertical;
+  overflow: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000351}}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000359}}
 .sprite, .one, .two, .three {
   display: inline-block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000362}}
 .clearfix {
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_base\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_base\.scss}line{font-family:\0000389}}
 .clearfix:before {
   content: "";
   display: table;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_base\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/_base\.scss}line{font-family:\0000393}}
 .clearfix:after {
   content: "\0020";
   display: table;
@@ -632,28 +699,99 @@ table {
   visibility: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000318}}
+/*	GENERAL
+----------------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000368}}
+body {
+  font: normal normal normal 16px/1.618 "Pontano Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  color: #31363c;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000372}}
+img {
+  vertical-align: middle;
+}
+
+/*	TYPOGRAPHY
+----------------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000378}}
+p {
+  font-size: 0.813em;
+  /* = 13px */
+  line-height: 1.315;
+  margin: 1em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000383}}
+h1, h2, h3, h4, h5, h6 {
+  font: normal normal normal inherit/inherit "Metrophobic", "Segoe UI", Segoe, Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000386}}
+h1 {
+  font-size: 1.315em;
+  /* = 21px */
+  margin: 0.618em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000390}}
+h2 {
+  font-size: 2.127em;
+  /* = 34px */
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000394}}
+h3 {
+  font-size: 1.17em;
+  /* = 18px */
+  margin: 1.315em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000398}}
+h4 {
+  font-size: 1em;
+  margin: 1.315em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\00003102}}
+h5 {
+  font-size: 0.813rem;
+  /* = 13px */
+  margin: 1.618em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\00003106}}
+h6 {
+  font-size: 0.688rem;
+  /* = 11px */
+  margin: 2.127em 0;
+}
+
+/*	LAYOUT
+----------------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\00003114}}
 .one {
   background-position: 0 0;
   height: 395px;
   width: 640px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\00003115}}
 .two {
   background-position: 0 -814px;
   height: 430px;
   width: 640px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\00003116}}
 .three {
   background-position: 0 -395px;
   height: 419px;
   width: 640px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\00003117}}
 figure.fluidratio {
   /* This element will have fluid ratio from 4:1 at 800px to 2:1 at 300px. */
   padding-top: 10%;
@@ -668,14 +806,116 @@ figure.fluidratio {
   background-image: url(about:blank);
 }
 
-@media (min-width: 30em) and (max-width: 60em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\0000327}}
+/*	DEVICE SPECIFIC LAYOUTS
+----------------------------------------------- */
+@media (min-width: 240px) and (max-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\00003129}}
   .page {
-    max-width: 61em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-left: auto;
     margin-right: auto;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(20%, rgba(100, 100, 225, 0.25)), color-stop(20%, rgba(0, 0, 0, 0)), color-stop(26.66667%, rgba(0, 0, 0, 0)), color-stop(26.66667%, rgba(100, 100, 225, 0.25)), color-stop(46.66667%, rgba(100, 100, 225, 0.25)), color-stop(46.66667%, rgba(0, 0, 0, 0)), color-stop(53.33333%, rgba(0, 0, 0, 0)), color-stop(53.33333%, rgba(100, 100, 225, 0.25)), color-stop(73.33333%, rgba(100, 100, 225, 0.25)), color-stop(73.33333%, rgba(0, 0, 0, 0)), color-stop(80.0%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 26.66667%, rgba(100, 100, 225, 0.25) 26.66667%, rgba(100, 100, 225, 0.25) 46.66667%, rgba(0, 0, 0, 0) 46.66667%, rgba(0, 0, 0, 0) 53.33333%, rgba(100, 100, 225, 0.25) 53.33333%, rgba(100, 100, 225, 0.25) 73.33333%, rgba(0, 0, 0, 0) 73.33333%, rgba(0, 0, 0, 0) 80.0%, rgba(100, 100, 225, 0.25) 80%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 26.66667%, rgba(100, 100, 225, 0.25) 26.66667%, rgba(100, 100, 225, 0.25) 46.66667%, rgba(0, 0, 0, 0) 46.66667%, rgba(0, 0, 0, 0) 53.33333%, rgba(100, 100, 225, 0.25) 53.33333%, rgba(100, 100, 225, 0.25) 73.33333%, rgba(0, 0, 0, 0) 73.33333%, rgba(0, 0, 0, 0) 80.0%, rgba(100, 100, 225, 0.25) 80%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 26.66667%, rgba(100, 100, 225, 0.25) 26.66667%, rgba(100, 100, 225, 0.25) 46.66667%, rgba(0, 0, 0, 0) 46.66667%, rgba(0, 0, 0, 0) 53.33333%, rgba(100, 100, 225, 0.25) 53.33333%, rgba(100, 100, 225, 0.25) 73.33333%, rgba(0, 0, 0, 0) 73.33333%, rgba(0, 0, 0, 0) 80.0%, rgba(100, 100, 225, 0.25) 80%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 26.66667%, rgba(100, 100, 225, 0.25) 26.66667%, rgba(100, 100, 225, 0.25) 46.66667%, rgba(0, 0, 0, 0) 46.66667%, rgba(0, 0, 0, 0) 53.33333%, rgba(100, 100, 225, 0.25) 53.33333%, rgba(100, 100, 225, 0.25) 73.33333%, rgba(0, 0, 0, 0) 73.33333%, rgba(0, 0, 0, 0) 80.0%, rgba(100, 100, 225, 0.25) 80%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+  .page:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\00003135}}
+  .page {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(9.67742%, rgba(100, 100, 225, 0.25)), color-stop(9.67742%, rgba(0, 0, 0, 0)), color-stop(12.90323%, rgba(0, 0, 0, 0)), color-stop(12.90323%, rgba(100, 100, 225, 0.25)), color-stop(22.58065%, rgba(100, 100, 225, 0.25)), color-stop(22.58065%, rgba(0, 0, 0, 0)), color-stop(25.80645%, rgba(0, 0, 0, 0)), color-stop(25.80645%, rgba(100, 100, 225, 0.25)), color-stop(35.48387%, rgba(100, 100, 225, 0.25)), color-stop(35.48387%, rgba(0, 0, 0, 0)), color-stop(38.70968%, rgba(0, 0, 0, 0)), color-stop(38.70968%, rgba(100, 100, 225, 0.25)), color-stop(48.3871%, rgba(100, 100, 225, 0.25)), color-stop(48.3871%, rgba(0, 0, 0, 0)), color-stop(51.6129%, rgba(0, 0, 0, 0)), color-stop(51.6129%, rgba(100, 100, 225, 0.25)), color-stop(61.29032%, rgba(100, 100, 225, 0.25)), color-stop(61.29032%, rgba(0, 0, 0, 0)), color-stop(64.51613%, rgba(0, 0, 0, 0)), color-stop(64.51613%, rgba(100, 100, 225, 0.25)), color-stop(74.19355%, rgba(100, 100, 225, 0.25)), color-stop(74.19355%, rgba(0, 0, 0, 0)), color-stop(77.41935%, rgba(0, 0, 0, 0)), color-stop(77.41935%, rgba(100, 100, 225, 0.25)), color-stop(87.09677%, rgba(100, 100, 225, 0.25)), color-stop(87.09677%, rgba(0, 0, 0, 0)), color-stop(90.32258%, rgba(0, 0, 0, 0)), color-stop(90.32258%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 9.67742%, rgba(0, 0, 0, 0) 9.67742%, rgba(0, 0, 0, 0) 12.90323%, rgba(100, 100, 225, 0.25) 12.90323%, rgba(100, 100, 225, 0.25) 22.58065%, rgba(0, 0, 0, 0) 22.58065%, rgba(0, 0, 0, 0) 25.80645%, rgba(100, 100, 225, 0.25) 25.80645%, rgba(100, 100, 225, 0.25) 35.48387%, rgba(0, 0, 0, 0) 35.48387%, rgba(0, 0, 0, 0) 38.70968%, rgba(100, 100, 225, 0.25) 38.70968%, rgba(100, 100, 225, 0.25) 48.3871%, rgba(0, 0, 0, 0) 48.3871%, rgba(0, 0, 0, 0) 51.6129%, rgba(100, 100, 225, 0.25) 51.6129%, rgba(100, 100, 225, 0.25) 61.29032%, rgba(0, 0, 0, 0) 61.29032%, rgba(0, 0, 0, 0) 64.51613%, rgba(100, 100, 225, 0.25) 64.51613%, rgba(100, 100, 225, 0.25) 74.19355%, rgba(0, 0, 0, 0) 74.19355%, rgba(0, 0, 0, 0) 77.41935%, rgba(100, 100, 225, 0.25) 77.41935%, rgba(100, 100, 225, 0.25) 87.09677%, rgba(0, 0, 0, 0) 87.09677%, rgba(0, 0, 0, 0) 90.32258%, rgba(100, 100, 225, 0.25) 90.32258%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 9.67742%, rgba(0, 0, 0, 0) 9.67742%, rgba(0, 0, 0, 0) 12.90323%, rgba(100, 100, 225, 0.25) 12.90323%, rgba(100, 100, 225, 0.25) 22.58065%, rgba(0, 0, 0, 0) 22.58065%, rgba(0, 0, 0, 0) 25.80645%, rgba(100, 100, 225, 0.25) 25.80645%, rgba(100, 100, 225, 0.25) 35.48387%, rgba(0, 0, 0, 0) 35.48387%, rgba(0, 0, 0, 0) 38.70968%, rgba(100, 100, 225, 0.25) 38.70968%, rgba(100, 100, 225, 0.25) 48.3871%, rgba(0, 0, 0, 0) 48.3871%, rgba(0, 0, 0, 0) 51.6129%, rgba(100, 100, 225, 0.25) 51.6129%, rgba(100, 100, 225, 0.25) 61.29032%, rgba(0, 0, 0, 0) 61.29032%, rgba(0, 0, 0, 0) 64.51613%, rgba(100, 100, 225, 0.25) 64.51613%, rgba(100, 100, 225, 0.25) 74.19355%, rgba(0, 0, 0, 0) 74.19355%, rgba(0, 0, 0, 0) 77.41935%, rgba(100, 100, 225, 0.25) 77.41935%, rgba(100, 100, 225, 0.25) 87.09677%, rgba(0, 0, 0, 0) 87.09677%, rgba(0, 0, 0, 0) 90.32258%, rgba(100, 100, 225, 0.25) 90.32258%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 9.67742%, rgba(0, 0, 0, 0) 9.67742%, rgba(0, 0, 0, 0) 12.90323%, rgba(100, 100, 225, 0.25) 12.90323%, rgba(100, 100, 225, 0.25) 22.58065%, rgba(0, 0, 0, 0) 22.58065%, rgba(0, 0, 0, 0) 25.80645%, rgba(100, 100, 225, 0.25) 25.80645%, rgba(100, 100, 225, 0.25) 35.48387%, rgba(0, 0, 0, 0) 35.48387%, rgba(0, 0, 0, 0) 38.70968%, rgba(100, 100, 225, 0.25) 38.70968%, rgba(100, 100, 225, 0.25) 48.3871%, rgba(0, 0, 0, 0) 48.3871%, rgba(0, 0, 0, 0) 51.6129%, rgba(100, 100, 225, 0.25) 51.6129%, rgba(100, 100, 225, 0.25) 61.29032%, rgba(0, 0, 0, 0) 61.29032%, rgba(0, 0, 0, 0) 64.51613%, rgba(100, 100, 225, 0.25) 64.51613%, rgba(100, 100, 225, 0.25) 74.19355%, rgba(0, 0, 0, 0) 74.19355%, rgba(0, 0, 0, 0) 77.41935%, rgba(100, 100, 225, 0.25) 77.41935%, rgba(100, 100, 225, 0.25) 87.09677%, rgba(0, 0, 0, 0) 87.09677%, rgba(0, 0, 0, 0) 90.32258%, rgba(100, 100, 225, 0.25) 90.32258%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 9.67742%, rgba(0, 0, 0, 0) 9.67742%, rgba(0, 0, 0, 0) 12.90323%, rgba(100, 100, 225, 0.25) 12.90323%, rgba(100, 100, 225, 0.25) 22.58065%, rgba(0, 0, 0, 0) 22.58065%, rgba(0, 0, 0, 0) 25.80645%, rgba(100, 100, 225, 0.25) 25.80645%, rgba(100, 100, 225, 0.25) 35.48387%, rgba(0, 0, 0, 0) 35.48387%, rgba(0, 0, 0, 0) 38.70968%, rgba(100, 100, 225, 0.25) 38.70968%, rgba(100, 100, 225, 0.25) 48.3871%, rgba(0, 0, 0, 0) 48.3871%, rgba(0, 0, 0, 0) 51.6129%, rgba(100, 100, 225, 0.25) 51.6129%, rgba(100, 100, 225, 0.25) 61.29032%, rgba(0, 0, 0, 0) 61.29032%, rgba(0, 0, 0, 0) 64.51613%, rgba(100, 100, 225, 0.25) 64.51613%, rgba(100, 100, 225, 0.25) 74.19355%, rgba(0, 0, 0, 0) 74.19355%, rgba(0, 0, 0, 0) 77.41935%, rgba(100, 100, 225, 0.25) 77.41935%, rgba(100, 100, 225, 0.25) 87.09677%, rgba(0, 0, 0, 0) 87.09677%, rgba(0, 0, 0, 0) 90.32258%, rgba(100, 100, 225, 0.25) 90.32258%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+  .page:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media (min-width: 980px) and (max-width: 1119px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\00003141}}
+  .page {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(6.38298%, rgba(100, 100, 225, 0.25)), color-stop(6.38298%, rgba(0, 0, 0, 0)), color-stop(8.51064%, rgba(0, 0, 0, 0)), color-stop(8.51064%, rgba(100, 100, 225, 0.25)), color-stop(14.89362%, rgba(100, 100, 225, 0.25)), color-stop(14.89362%, rgba(0, 0, 0, 0)), color-stop(17.02128%, rgba(0, 0, 0, 0)), color-stop(17.02128%, rgba(100, 100, 225, 0.25)), color-stop(23.40426%, rgba(100, 100, 225, 0.25)), color-stop(23.40426%, rgba(0, 0, 0, 0)), color-stop(25.53191%, rgba(0, 0, 0, 0)), color-stop(25.53191%, rgba(100, 100, 225, 0.25)), color-stop(31.91489%, rgba(100, 100, 225, 0.25)), color-stop(31.91489%, rgba(0, 0, 0, 0)), color-stop(34.04255%, rgba(0, 0, 0, 0)), color-stop(34.04255%, rgba(100, 100, 225, 0.25)), color-stop(40.42553%, rgba(100, 100, 225, 0.25)), color-stop(40.42553%, rgba(0, 0, 0, 0)), color-stop(42.55319%, rgba(0, 0, 0, 0)), color-stop(42.55319%, rgba(100, 100, 225, 0.25)), color-stop(48.93617%, rgba(100, 100, 225, 0.25)), color-stop(48.93617%, rgba(0, 0, 0, 0)), color-stop(51.06383%, rgba(0, 0, 0, 0)), color-stop(51.06383%, rgba(100, 100, 225, 0.25)), color-stop(57.44681%, rgba(100, 100, 225, 0.25)), color-stop(57.44681%, rgba(0, 0, 0, 0)), color-stop(59.57447%, rgba(0, 0, 0, 0)), color-stop(59.57447%, rgba(100, 100, 225, 0.25)), color-stop(65.95745%, rgba(100, 100, 225, 0.25)), color-stop(65.95745%, rgba(0, 0, 0, 0)), color-stop(68.08511%, rgba(0, 0, 0, 0)), color-stop(68.08511%, rgba(100, 100, 225, 0.25)), color-stop(74.46809%, rgba(100, 100, 225, 0.25)), color-stop(74.46809%, rgba(0, 0, 0, 0)), color-stop(76.59574%, rgba(0, 0, 0, 0)), color-stop(76.59574%, rgba(100, 100, 225, 0.25)), color-stop(82.97872%, rgba(100, 100, 225, 0.25)), color-stop(82.97872%, rgba(0, 0, 0, 0)), color-stop(85.10638%, rgba(0, 0, 0, 0)), color-stop(85.10638%, rgba(100, 100, 225, 0.25)), color-stop(91.48936%, rgba(100, 100, 225, 0.25)), color-stop(91.48936%, rgba(0, 0, 0, 0)), color-stop(93.61702%, rgba(0, 0, 0, 0)), color-stop(93.61702%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, rgba(100, 100, 225, 0.25) 8.51064%, rgba(100, 100, 225, 0.25) 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, rgba(100, 100, 225, 0.25) 17.02128%, rgba(100, 100, 225, 0.25) 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, rgba(100, 100, 225, 0.25) 25.53191%, rgba(100, 100, 225, 0.25) 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, rgba(100, 100, 225, 0.25) 34.04255%, rgba(100, 100, 225, 0.25) 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, rgba(100, 100, 225, 0.25) 42.55319%, rgba(100, 100, 225, 0.25) 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, rgba(100, 100, 225, 0.25) 51.06383%, rgba(100, 100, 225, 0.25) 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, rgba(100, 100, 225, 0.25) 59.57447%, rgba(100, 100, 225, 0.25) 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, rgba(100, 100, 225, 0.25) 68.08511%, rgba(100, 100, 225, 0.25) 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, rgba(100, 100, 225, 0.25) 76.59574%, rgba(100, 100, 225, 0.25) 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, rgba(100, 100, 225, 0.25) 85.10638%, rgba(100, 100, 225, 0.25) 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, rgba(100, 100, 225, 0.25) 93.61702%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, rgba(100, 100, 225, 0.25) 8.51064%, rgba(100, 100, 225, 0.25) 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, rgba(100, 100, 225, 0.25) 17.02128%, rgba(100, 100, 225, 0.25) 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, rgba(100, 100, 225, 0.25) 25.53191%, rgba(100, 100, 225, 0.25) 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, rgba(100, 100, 225, 0.25) 34.04255%, rgba(100, 100, 225, 0.25) 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, rgba(100, 100, 225, 0.25) 42.55319%, rgba(100, 100, 225, 0.25) 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, rgba(100, 100, 225, 0.25) 51.06383%, rgba(100, 100, 225, 0.25) 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, rgba(100, 100, 225, 0.25) 59.57447%, rgba(100, 100, 225, 0.25) 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, rgba(100, 100, 225, 0.25) 68.08511%, rgba(100, 100, 225, 0.25) 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, rgba(100, 100, 225, 0.25) 76.59574%, rgba(100, 100, 225, 0.25) 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, rgba(100, 100, 225, 0.25) 85.10638%, rgba(100, 100, 225, 0.25) 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, rgba(100, 100, 225, 0.25) 93.61702%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, rgba(100, 100, 225, 0.25) 8.51064%, rgba(100, 100, 225, 0.25) 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, rgba(100, 100, 225, 0.25) 17.02128%, rgba(100, 100, 225, 0.25) 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, rgba(100, 100, 225, 0.25) 25.53191%, rgba(100, 100, 225, 0.25) 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, rgba(100, 100, 225, 0.25) 34.04255%, rgba(100, 100, 225, 0.25) 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, rgba(100, 100, 225, 0.25) 42.55319%, rgba(100, 100, 225, 0.25) 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, rgba(100, 100, 225, 0.25) 51.06383%, rgba(100, 100, 225, 0.25) 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, rgba(100, 100, 225, 0.25) 59.57447%, rgba(100, 100, 225, 0.25) 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, rgba(100, 100, 225, 0.25) 68.08511%, rgba(100, 100, 225, 0.25) 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, rgba(100, 100, 225, 0.25) 76.59574%, rgba(100, 100, 225, 0.25) 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, rgba(100, 100, 225, 0.25) 85.10638%, rgba(100, 100, 225, 0.25) 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, rgba(100, 100, 225, 0.25) 93.61702%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, rgba(100, 100, 225, 0.25) 8.51064%, rgba(100, 100, 225, 0.25) 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, rgba(100, 100, 225, 0.25) 17.02128%, rgba(100, 100, 225, 0.25) 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, rgba(100, 100, 225, 0.25) 25.53191%, rgba(100, 100, 225, 0.25) 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, rgba(100, 100, 225, 0.25) 34.04255%, rgba(100, 100, 225, 0.25) 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, rgba(100, 100, 225, 0.25) 42.55319%, rgba(100, 100, 225, 0.25) 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, rgba(100, 100, 225, 0.25) 51.06383%, rgba(100, 100, 225, 0.25) 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, rgba(100, 100, 225, 0.25) 59.57447%, rgba(100, 100, 225, 0.25) 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, rgba(100, 100, 225, 0.25) 68.08511%, rgba(100, 100, 225, 0.25) 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, rgba(100, 100, 225, 0.25) 76.59574%, rgba(100, 100, 225, 0.25) 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, rgba(100, 100, 225, 0.25) 85.10638%, rgba(100, 100, 225, 0.25) 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, rgba(100, 100, 225, 0.25) 93.61702%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+  .page:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/chenlu\/Documents\/Visual\%20Studio\%202012\/Projects\/umbraco4\.11\/umbraco4\.11\/compass\/sass\/screen\.scss}line{font-family:\00003147}}
+  .page {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(4.7619%, rgba(100, 100, 225, 0.25)), color-stop(4.7619%, rgba(0, 0, 0, 0)), color-stop(6.34921%, rgba(0, 0, 0, 0)), color-stop(6.34921%, rgba(100, 100, 225, 0.25)), color-stop(11.11111%, rgba(100, 100, 225, 0.25)), color-stop(11.11111%, rgba(0, 0, 0, 0)), color-stop(12.69841%, rgba(0, 0, 0, 0)), color-stop(12.69841%, rgba(100, 100, 225, 0.25)), color-stop(17.46032%, rgba(100, 100, 225, 0.25)), color-stop(17.46032%, rgba(0, 0, 0, 0)), color-stop(19.04762%, rgba(0, 0, 0, 0)), color-stop(19.04762%, rgba(100, 100, 225, 0.25)), color-stop(23.80952%, rgba(100, 100, 225, 0.25)), color-stop(23.80952%, rgba(0, 0, 0, 0)), color-stop(25.39683%, rgba(0, 0, 0, 0)), color-stop(25.39683%, rgba(100, 100, 225, 0.25)), color-stop(30.15873%, rgba(100, 100, 225, 0.25)), color-stop(30.15873%, rgba(0, 0, 0, 0)), color-stop(31.74603%, rgba(0, 0, 0, 0)), color-stop(31.74603%, rgba(100, 100, 225, 0.25)), color-stop(36.50794%, rgba(100, 100, 225, 0.25)), color-stop(36.50794%, rgba(0, 0, 0, 0)), color-stop(38.09524%, rgba(0, 0, 0, 0)), color-stop(38.09524%, rgba(100, 100, 225, 0.25)), color-stop(42.85714%, rgba(100, 100, 225, 0.25)), color-stop(42.85714%, rgba(0, 0, 0, 0)), color-stop(44.44444%, rgba(0, 0, 0, 0)), color-stop(44.44444%, rgba(100, 100, 225, 0.25)), color-stop(49.20635%, rgba(100, 100, 225, 0.25)), color-stop(49.20635%, rgba(0, 0, 0, 0)), color-stop(50.79365%, rgba(0, 0, 0, 0)), color-stop(50.79365%, rgba(100, 100, 225, 0.25)), color-stop(55.55556%, rgba(100, 100, 225, 0.25)), color-stop(55.55556%, rgba(0, 0, 0, 0)), color-stop(57.14286%, rgba(0, 0, 0, 0)), color-stop(57.14286%, rgba(100, 100, 225, 0.25)), color-stop(61.90476%, rgba(100, 100, 225, 0.25)), color-stop(61.90476%, rgba(0, 0, 0, 0)), color-stop(63.49206%, rgba(0, 0, 0, 0)), color-stop(63.49206%, rgba(100, 100, 225, 0.25)), color-stop(68.25397%, rgba(100, 100, 225, 0.25)), color-stop(68.25397%, rgba(0, 0, 0, 0)), color-stop(69.84127%, rgba(0, 0, 0, 0)), color-stop(69.84127%, rgba(100, 100, 225, 0.25)), color-stop(74.60317%, rgba(100, 100, 225, 0.25)), color-stop(74.60317%, rgba(0, 0, 0, 0)), color-stop(76.19048%, rgba(0, 0, 0, 0)), color-stop(76.19048%, rgba(100, 100, 225, 0.25)), color-stop(80.95238%, rgba(100, 100, 225, 0.25)), color-stop(80.95238%, rgba(0, 0, 0, 0)), color-stop(82.53968%, rgba(0, 0, 0, 0)), color-stop(82.53968%, rgba(100, 100, 225, 0.25)), color-stop(87.30159%, rgba(100, 100, 225, 0.25)), color-stop(87.30159%, rgba(0, 0, 0, 0)), color-stop(88.88889%, rgba(0, 0, 0, 0)), color-stop(88.88889%, rgba(100, 100, 225, 0.25)), color-stop(93.65079%, rgba(100, 100, 225, 0.25)), color-stop(93.65079%, rgba(0, 0, 0, 0)), color-stop(95.2381%, rgba(0, 0, 0, 0)), color-stop(95.2381%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 4.7619%, rgba(0, 0, 0, 0) 4.7619%, rgba(0, 0, 0, 0) 6.34921%, rgba(100, 100, 225, 0.25) 6.34921%, rgba(100, 100, 225, 0.25) 11.11111%, rgba(0, 0, 0, 0) 11.11111%, rgba(0, 0, 0, 0) 12.69841%, rgba(100, 100, 225, 0.25) 12.69841%, rgba(100, 100, 225, 0.25) 17.46032%, rgba(0, 0, 0, 0) 17.46032%, rgba(0, 0, 0, 0) 19.04762%, rgba(100, 100, 225, 0.25) 19.04762%, rgba(100, 100, 225, 0.25) 23.80952%, rgba(0, 0, 0, 0) 23.80952%, rgba(0, 0, 0, 0) 25.39683%, rgba(100, 100, 225, 0.25) 25.39683%, rgba(100, 100, 225, 0.25) 30.15873%, rgba(0, 0, 0, 0) 30.15873%, rgba(0, 0, 0, 0) 31.74603%, rgba(100, 100, 225, 0.25) 31.74603%, rgba(100, 100, 225, 0.25) 36.50794%, rgba(0, 0, 0, 0) 36.50794%, rgba(0, 0, 0, 0) 38.09524%, rgba(100, 100, 225, 0.25) 38.09524%, rgba(100, 100, 225, 0.25) 42.85714%, rgba(0, 0, 0, 0) 42.85714%, rgba(0, 0, 0, 0) 44.44444%, rgba(100, 100, 225, 0.25) 44.44444%, rgba(100, 100, 225, 0.25) 49.20635%, rgba(0, 0, 0, 0) 49.20635%, rgba(0, 0, 0, 0) 50.79365%, rgba(100, 100, 225, 0.25) 50.79365%, rgba(100, 100, 225, 0.25) 55.55556%, rgba(0, 0, 0, 0) 55.55556%, rgba(0, 0, 0, 0) 57.14286%, rgba(100, 100, 225, 0.25) 57.14286%, rgba(100, 100, 225, 0.25) 61.90476%, rgba(0, 0, 0, 0) 61.90476%, rgba(0, 0, 0, 0) 63.49206%, rgba(100, 100, 225, 0.25) 63.49206%, rgba(100, 100, 225, 0.25) 68.25397%, rgba(0, 0, 0, 0) 68.25397%, rgba(0, 0, 0, 0) 69.84127%, rgba(100, 100, 225, 0.25) 69.84127%, rgba(100, 100, 225, 0.25) 74.60317%, rgba(0, 0, 0, 0) 74.60317%, rgba(0, 0, 0, 0) 76.19048%, rgba(100, 100, 225, 0.25) 76.19048%, rgba(100, 100, 225, 0.25) 80.95238%, rgba(0, 0, 0, 0) 80.95238%, rgba(0, 0, 0, 0) 82.53968%, rgba(100, 100, 225, 0.25) 82.53968%, rgba(100, 100, 225, 0.25) 87.30159%, rgba(0, 0, 0, 0) 87.30159%, rgba(0, 0, 0, 0) 88.88889%, rgba(100, 100, 225, 0.25) 88.88889%, rgba(100, 100, 225, 0.25) 93.65079%, rgba(0, 0, 0, 0) 93.65079%, rgba(0, 0, 0, 0) 95.2381%, rgba(100, 100, 225, 0.25) 95.2381%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 4.7619%, rgba(0, 0, 0, 0) 4.7619%, rgba(0, 0, 0, 0) 6.34921%, rgba(100, 100, 225, 0.25) 6.34921%, rgba(100, 100, 225, 0.25) 11.11111%, rgba(0, 0, 0, 0) 11.11111%, rgba(0, 0, 0, 0) 12.69841%, rgba(100, 100, 225, 0.25) 12.69841%, rgba(100, 100, 225, 0.25) 17.46032%, rgba(0, 0, 0, 0) 17.46032%, rgba(0, 0, 0, 0) 19.04762%, rgba(100, 100, 225, 0.25) 19.04762%, rgba(100, 100, 225, 0.25) 23.80952%, rgba(0, 0, 0, 0) 23.80952%, rgba(0, 0, 0, 0) 25.39683%, rgba(100, 100, 225, 0.25) 25.39683%, rgba(100, 100, 225, 0.25) 30.15873%, rgba(0, 0, 0, 0) 30.15873%, rgba(0, 0, 0, 0) 31.74603%, rgba(100, 100, 225, 0.25) 31.74603%, rgba(100, 100, 225, 0.25) 36.50794%, rgba(0, 0, 0, 0) 36.50794%, rgba(0, 0, 0, 0) 38.09524%, rgba(100, 100, 225, 0.25) 38.09524%, rgba(100, 100, 225, 0.25) 42.85714%, rgba(0, 0, 0, 0) 42.85714%, rgba(0, 0, 0, 0) 44.44444%, rgba(100, 100, 225, 0.25) 44.44444%, rgba(100, 100, 225, 0.25) 49.20635%, rgba(0, 0, 0, 0) 49.20635%, rgba(0, 0, 0, 0) 50.79365%, rgba(100, 100, 225, 0.25) 50.79365%, rgba(100, 100, 225, 0.25) 55.55556%, rgba(0, 0, 0, 0) 55.55556%, rgba(0, 0, 0, 0) 57.14286%, rgba(100, 100, 225, 0.25) 57.14286%, rgba(100, 100, 225, 0.25) 61.90476%, rgba(0, 0, 0, 0) 61.90476%, rgba(0, 0, 0, 0) 63.49206%, rgba(100, 100, 225, 0.25) 63.49206%, rgba(100, 100, 225, 0.25) 68.25397%, rgba(0, 0, 0, 0) 68.25397%, rgba(0, 0, 0, 0) 69.84127%, rgba(100, 100, 225, 0.25) 69.84127%, rgba(100, 100, 225, 0.25) 74.60317%, rgba(0, 0, 0, 0) 74.60317%, rgba(0, 0, 0, 0) 76.19048%, rgba(100, 100, 225, 0.25) 76.19048%, rgba(100, 100, 225, 0.25) 80.95238%, rgba(0, 0, 0, 0) 80.95238%, rgba(0, 0, 0, 0) 82.53968%, rgba(100, 100, 225, 0.25) 82.53968%, rgba(100, 100, 225, 0.25) 87.30159%, rgba(0, 0, 0, 0) 87.30159%, rgba(0, 0, 0, 0) 88.88889%, rgba(100, 100, 225, 0.25) 88.88889%, rgba(100, 100, 225, 0.25) 93.65079%, rgba(0, 0, 0, 0) 93.65079%, rgba(0, 0, 0, 0) 95.2381%, rgba(100, 100, 225, 0.25) 95.2381%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 4.7619%, rgba(0, 0, 0, 0) 4.7619%, rgba(0, 0, 0, 0) 6.34921%, rgba(100, 100, 225, 0.25) 6.34921%, rgba(100, 100, 225, 0.25) 11.11111%, rgba(0, 0, 0, 0) 11.11111%, rgba(0, 0, 0, 0) 12.69841%, rgba(100, 100, 225, 0.25) 12.69841%, rgba(100, 100, 225, 0.25) 17.46032%, rgba(0, 0, 0, 0) 17.46032%, rgba(0, 0, 0, 0) 19.04762%, rgba(100, 100, 225, 0.25) 19.04762%, rgba(100, 100, 225, 0.25) 23.80952%, rgba(0, 0, 0, 0) 23.80952%, rgba(0, 0, 0, 0) 25.39683%, rgba(100, 100, 225, 0.25) 25.39683%, rgba(100, 100, 225, 0.25) 30.15873%, rgba(0, 0, 0, 0) 30.15873%, rgba(0, 0, 0, 0) 31.74603%, rgba(100, 100, 225, 0.25) 31.74603%, rgba(100, 100, 225, 0.25) 36.50794%, rgba(0, 0, 0, 0) 36.50794%, rgba(0, 0, 0, 0) 38.09524%, rgba(100, 100, 225, 0.25) 38.09524%, rgba(100, 100, 225, 0.25) 42.85714%, rgba(0, 0, 0, 0) 42.85714%, rgba(0, 0, 0, 0) 44.44444%, rgba(100, 100, 225, 0.25) 44.44444%, rgba(100, 100, 225, 0.25) 49.20635%, rgba(0, 0, 0, 0) 49.20635%, rgba(0, 0, 0, 0) 50.79365%, rgba(100, 100, 225, 0.25) 50.79365%, rgba(100, 100, 225, 0.25) 55.55556%, rgba(0, 0, 0, 0) 55.55556%, rgba(0, 0, 0, 0) 57.14286%, rgba(100, 100, 225, 0.25) 57.14286%, rgba(100, 100, 225, 0.25) 61.90476%, rgba(0, 0, 0, 0) 61.90476%, rgba(0, 0, 0, 0) 63.49206%, rgba(100, 100, 225, 0.25) 63.49206%, rgba(100, 100, 225, 0.25) 68.25397%, rgba(0, 0, 0, 0) 68.25397%, rgba(0, 0, 0, 0) 69.84127%, rgba(100, 100, 225, 0.25) 69.84127%, rgba(100, 100, 225, 0.25) 74.60317%, rgba(0, 0, 0, 0) 74.60317%, rgba(0, 0, 0, 0) 76.19048%, rgba(100, 100, 225, 0.25) 76.19048%, rgba(100, 100, 225, 0.25) 80.95238%, rgba(0, 0, 0, 0) 80.95238%, rgba(0, 0, 0, 0) 82.53968%, rgba(100, 100, 225, 0.25) 82.53968%, rgba(100, 100, 225, 0.25) 87.30159%, rgba(0, 0, 0, 0) 87.30159%, rgba(0, 0, 0, 0) 88.88889%, rgba(100, 100, 225, 0.25) 88.88889%, rgba(100, 100, 225, 0.25) 93.65079%, rgba(0, 0, 0, 0) 93.65079%, rgba(0, 0, 0, 0) 95.2381%, rgba(100, 100, 225, 0.25) 95.2381%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 4.7619%, rgba(0, 0, 0, 0) 4.7619%, rgba(0, 0, 0, 0) 6.34921%, rgba(100, 100, 225, 0.25) 6.34921%, rgba(100, 100, 225, 0.25) 11.11111%, rgba(0, 0, 0, 0) 11.11111%, rgba(0, 0, 0, 0) 12.69841%, rgba(100, 100, 225, 0.25) 12.69841%, rgba(100, 100, 225, 0.25) 17.46032%, rgba(0, 0, 0, 0) 17.46032%, rgba(0, 0, 0, 0) 19.04762%, rgba(100, 100, 225, 0.25) 19.04762%, rgba(100, 100, 225, 0.25) 23.80952%, rgba(0, 0, 0, 0) 23.80952%, rgba(0, 0, 0, 0) 25.39683%, rgba(100, 100, 225, 0.25) 25.39683%, rgba(100, 100, 225, 0.25) 30.15873%, rgba(0, 0, 0, 0) 30.15873%, rgba(0, 0, 0, 0) 31.74603%, rgba(100, 100, 225, 0.25) 31.74603%, rgba(100, 100, 225, 0.25) 36.50794%, rgba(0, 0, 0, 0) 36.50794%, rgba(0, 0, 0, 0) 38.09524%, rgba(100, 100, 225, 0.25) 38.09524%, rgba(100, 100, 225, 0.25) 42.85714%, rgba(0, 0, 0, 0) 42.85714%, rgba(0, 0, 0, 0) 44.44444%, rgba(100, 100, 225, 0.25) 44.44444%, rgba(100, 100, 225, 0.25) 49.20635%, rgba(0, 0, 0, 0) 49.20635%, rgba(0, 0, 0, 0) 50.79365%, rgba(100, 100, 225, 0.25) 50.79365%, rgba(100, 100, 225, 0.25) 55.55556%, rgba(0, 0, 0, 0) 55.55556%, rgba(0, 0, 0, 0) 57.14286%, rgba(100, 100, 225, 0.25) 57.14286%, rgba(100, 100, 225, 0.25) 61.90476%, rgba(0, 0, 0, 0) 61.90476%, rgba(0, 0, 0, 0) 63.49206%, rgba(100, 100, 225, 0.25) 63.49206%, rgba(100, 100, 225, 0.25) 68.25397%, rgba(0, 0, 0, 0) 68.25397%, rgba(0, 0, 0, 0) 69.84127%, rgba(100, 100, 225, 0.25) 69.84127%, rgba(100, 100, 225, 0.25) 74.60317%, rgba(0, 0, 0, 0) 74.60317%, rgba(0, 0, 0, 0) 76.19048%, rgba(100, 100, 225, 0.25) 76.19048%, rgba(100, 100, 225, 0.25) 80.95238%, rgba(0, 0, 0, 0) 80.95238%, rgba(0, 0, 0, 0) 82.53968%, rgba(100, 100, 225, 0.25) 82.53968%, rgba(100, 100, 225, 0.25) 87.30159%, rgba(0, 0, 0, 0) 87.30159%, rgba(0, 0, 0, 0) 88.88889%, rgba(100, 100, 225, 0.25) 88.88889%, rgba(100, 100, 225, 0.25) 93.65079%, rgba(0, 0, 0, 0) 93.65079%, rgba(0, 0, 0, 0) 95.2381%, rgba(100, 100, 225, 0.25) 95.2381%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
   .page:after {

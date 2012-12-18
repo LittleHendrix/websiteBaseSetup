@@ -91,6 +91,7 @@ textarea {
 
 body {
     margin: 0;
+	text-rendering: optimizeLegibility;
 }
 
 /* ==========================================================================
@@ -112,6 +113,14 @@ a:focus {
 a:active,
 a:hover {
     outline: 0;
+}
+
+/*
+ * Remove the blue link image border in IE.
+ */
+
+a img {
+	border: none;
 }
 
 /* ==========================================================================

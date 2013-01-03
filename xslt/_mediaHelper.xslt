@@ -16,6 +16,9 @@
 
 	<xsl:variable name="propName" select="/macro/PropName" />
 	<xsl:variable name="cropName" select="/macro/CropName" />
+	<xsl:variable name="optimize" select="number(/macro/Optimize)" />
+	<xsl:variable name="width" select="number(/macro/Width)" />
+	<xsl:variable name="height" select="number(/macro/Height)" />
 	<xsl:variable name="imgQual">
 		<xsl:choose>
 			<xsl:when test="string(/macro/ImgQual)!=''">
@@ -51,6 +54,9 @@
 					<xsl:call-template name="mediaLoop">
 						<xsl:with-param name="mediaNodes" select="$media" />
 						<xsl:with-param name="cropName" select="$cropName" />
+						<xsl:with-param name="optimize" select="$optimize" />
+						<xsl:with-param name="width" select="$width" />
+						<xsl:with-param name="height" select="$height" />
 						<xsl:with-param name="imgQual" select="$imgQual" />
 						<xsl:with-param name="itemMarkup" select="$itemMarkup" />
 					</xsl:call-template>
@@ -60,18 +66,24 @@
 				<xsl:call-template name="mediaLoop">
 					<xsl:with-param name="mediaNodes" select="$media" />
 					<xsl:with-param name="cropName" select="$cropName" />
+						<xsl:with-param name="optimize" select="$optimize" />
+						<xsl:with-param name="width" select="$width" />
+						<xsl:with-param name="height" select="$height" />
 					<xsl:with-param name="imgQual" select="$imgQual" />
 					<xsl:with-param name="itemMarkup" select="$itemMarkup" />
 				</xsl:call-template>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:if>
-
+	
 </xsl:template>
 
 <xsl:template name="mediaLoop">
 	<xsl:param name="mediaNodes" />
 	<xsl:param name="cropName" />
+	<xsl:param name="optimize" />
+	<xsl:param name="width" />
+	<xsl:param name="height" />
 	<xsl:param name="imgQual" />
 	<xsl:param name="itemMarkup" />
 		
@@ -93,6 +105,9 @@
 				<xsl:element name="{$itemMarkup}">
 					<xsl:call-template name="img">
 						<xsl:with-param name="src" select="$src" />
+						<xsl:with-param name="optimize" select="$optimize" />
+						<xsl:with-param name="width" select="$width" />
+						<xsl:with-param name="height" select="$height" />
 						<xsl:with-param name="imgQual" select="$imgQual" />
 						<xsl:with-param name="alt" select="@nodeName" />
 					</xsl:call-template>
@@ -101,6 +116,9 @@
 			<xsl:otherwise>
 				<xsl:call-template name="img">
 					<xsl:with-param name="src" select="$src" />
+					<xsl:with-param name="optimize" select="$optimize" />
+					<xsl:with-param name="width" select="$width" />
+					<xsl:with-param name="height" select="$height" />
 					<xsl:with-param name="imgQual" select="$imgQual" />
 					<xsl:with-param name="alt" select="@nodeName" />
 				</xsl:call-template>			
@@ -113,10 +131,33 @@
 		
 <xsl:template name="img">
 	<xsl:param name="src" />
+	<xsl:param name="optimize" />
+	<xsl:param name="width" />
+	<xsl:param name="height" />
 	<xsl:param name="imgQual" />
 	<xsl:param name="alt" />
 			
-	<img src="/imageGen.ashx?image={$src}&amp;compression={$imgQual}" alt="{$alt}" />
+	<img>
+		<xsl:choose>
+			<xsl:when test="number($optimize) = 1">
+				<xsl:attribute name="src"> 
+					<xsl:text>/ImageGen.ashx?image=</xsl:text><xsl:value-of select="$src" /> 
+					<xsl:if test="string($width)!='' and string($width)!='NaN'"><xsl:text>&amp;width=</xsl:text><xsl:value-of select="$width" /></xsl:if>
+					<xsl:if test="string($height)!='' and string($height)!='NaN'"><xsl:text>&amp;height=</xsl:text><xsl:value-of select="$height" /></xsl:if>
+					<xsl:text>&amp;compression=</xsl:text><xsl:value-of select="$imgQual" />
+					<xsl:text>&amp;constrain=true</xsl:text> 
+				</xsl:attribute>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:attribute name="src"> 
+					<xsl:value-of select="$src" />
+				</xsl:attribute>
+			</xsl:otherwise>
+		</xsl:choose>
+		<xsl:attribute name="alt">
+			<xsl:value-of select="$alt" />
+		</xsl:attribute>
+	</img>
 	
 </xsl:template>
 

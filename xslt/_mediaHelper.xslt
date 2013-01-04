@@ -110,6 +110,8 @@
 			</xsl:choose>
 		</xsl:variable>
 		
+		<xsl:variable name="alt" select="umbraco.library:Replace(umbraco.library:Replace(umbraco.library:Replace(umbraco.library:Replace(@nodeName,'_',' '),'.jpg',''),'.png',''),'.gif','')" />
+		
 		<xsl:choose>
 			<xsl:when test="string($itemMarkup)!=''">
 				<xsl:element name="{$itemMarkup}">
@@ -119,7 +121,7 @@
 						<xsl:with-param name="width" select="$width" />
 						<xsl:with-param name="height" select="$height" />
 						<xsl:with-param name="imgQual" select="$imgQual" />
-						<xsl:with-param name="alt" select="@nodeName" />
+						<xsl:with-param name="alt" select="$alt" />
 					</xsl:call-template>
 				</xsl:element>
 			</xsl:when>
@@ -130,7 +132,7 @@
 					<xsl:with-param name="width" select="$width" />
 					<xsl:with-param name="height" select="$height" />
 					<xsl:with-param name="imgQual" select="$imgQual" />
-					<xsl:with-param name="alt" select="@nodeName" />
+					<xsl:with-param name="alt" select="$alt" />
 				</xsl:call-template>			
 			</xsl:otherwise>
 		</xsl:choose>

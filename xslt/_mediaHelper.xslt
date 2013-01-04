@@ -14,9 +14,19 @@
 
 <xsl:template match="/">
 
-	<xsl:variable name="propName" select="/macro/PropName" />
-	<xsl:variable name="cropName" select="/macro/CropName" />
-	<xsl:variable name="optimize" select="number(/macro/Optimize)" />
+	<xsl:variable name="propName" select="normalize-space(/macro/PropName)" />
+	<xsl:variable name="cropName" select="normalize-space(/macro/CropName)" />
+	<xsl:variable name="opt" select="normalize-space(Exslt.ExsltStrings:lowercase(/macro/Optimize))" />
+	<xsl:variable name="optimize">
+		<xsl:choose>
+			<xsl:when test="contains('1,yes,true,',concat($opt,','))">
+				<xsl:value-of select="number(1)" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="number(0)" />
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:variable>
 	<xsl:variable name="width" select="number(/macro/Width)" />
 	<xsl:variable name="height" select="number(/macro/Height)" />
 	<xsl:variable name="imgQual">
@@ -29,7 +39,7 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:variable>
-	<xsl:variable name="markUp" select="Exslt.ExsltStrings:lowercase(/macro/MarkUp)" />
+	<xsl:variable name="markUp" select="normalize-space(Exslt.ExsltStrings:lowercase(/macro/MarkUp))" />
 	<xsl:variable name="itemMarkup">
 		<xsl:choose>
 			<xsl:when test="string($markUp)=''">
@@ -43,7 +53,7 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:variable>
-	<xsl:variable name="className" select="Exslt.ExsltStrings:lowercase(/macro/CssClass)" />
+	<xsl:variable name="className" select="normalize-space(Exslt.ExsltStrings:lowercase(/macro/CssClass))" />
 	
 	<xsl:if test="string($propName)!=''">
 		<xsl:variable name="media" select="$currentPage/*[not(@isDoc) and name() = $propName]" />

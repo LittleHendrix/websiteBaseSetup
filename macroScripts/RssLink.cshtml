@@ -1,0 +1,7 @@
+﻿@inherits umbraco.MacroEngines.DynamicNodeContext
+@{	
+	var homenode = Model.AncestorOrSelf(1);
+	var rssNodeId = @homenode.rssStartNode;
+	if(!String.IsNullOrEmpty(@rssNodeId))
+    {<link rel="alternate" type="application/rss+xml" title="@homenode.rssTitle" href="@(Model.NodeById(rssNodeId).Url)rss" />}
+}

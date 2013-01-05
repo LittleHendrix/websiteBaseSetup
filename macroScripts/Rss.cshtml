@@ -6,31 +6,15 @@
     //Get the domain 
     var siteURL = "http://" + Request.Url.Host;
 	var homenode = Model.AncestorOrSelf("Homepage");
-	var siteName = String.IsNullOrEmpty(@homenode.siteName) ? "My" : @homenode.siteName;
-    
+	var siteName = String.IsNullOrEmpty(homenode.siteName) ? "My" : homenode.siteName;
+	
     //Get Macro Parameters
-    var rssTitle        = String.IsNullOrEmpty(@homenode.rssTitle) ? @siteName + " RSS feed" : @homenode.rssTitle;
-    var rssDescription  = String.IsNullOrEmpty(@homenode.rssDescription) ? "Subscribe to my RSS feed" : @homenode.rssDescription;
-    var startNodeID     = @homenode.rssStartNode;
-	
-    dynamic startNode;
-    dynamic latestNodeUpdated;
-	
-    //Check we have a node ID passed in
-    if (!String.IsNullOrEmpty(startNodeID))
-    {
-        //Get the node to list the child items in the RSS
-        startNode = Library.NodeById(startNodeID);
+    var rssTitle        = String.IsNullOrEmpty(Model.metaTitle) ? siteName + " RSS feed" : Model.metaTitle;
+    var rssDescription  = String.IsNullOrEmpty(Model.metaDescription) ? "Subscribe to my RSS feed" : Model.metaDescription;
 
-        //Get the latest createDate of all news items to use as the RSS feed updateDate
-        latestNodeUpdated = startNode.Children.Where("visible").OrderBy("updateDate desc").First();
-    }
-    else
-    {
-        //Stop the rest of the page rendering, as we don't have a start node ID to work with
-        return;
-    }
-}        
+    //Get the latest createDate of all news items to use as the RSS feed updateDate
+    dynamic latestNodeUpdated = Model.Children.Where("visible").OrderBy("updateDate desc").First();
+} 
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" 
     xmlns:content="http://purl.org/rss/1.0/modules/content/" 
@@ -45,7 +29,7 @@
             <description>@rssDescription</description>
             <language>en</language>
             @{
-                foreach (var item in startNode.Children.Where("Visible"))
+                foreach (var item in Model.Children.Where("Visible"))
                 {
                     <item>
                         <title>@item.Name</title>

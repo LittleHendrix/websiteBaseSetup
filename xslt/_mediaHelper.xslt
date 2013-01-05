@@ -14,12 +14,12 @@
 
 <xsl:template match="/">
 
-	<xsl:variable name="propName" select="normalize-space(/macro/PropName)" />
-  <xsl:variable name="cropName" select="normalize-space(/macro/CropName)" />
-	<xsl:variable name="opt" select="normalize-space(Exslt.ExsltStrings:lowercase(/macro/Optimize))" />
+	<xsl:variable name="propName" select="normalize-space(/macro/propName)" />
+  <xsl:variable name="cropName" select="normalize-space(/macro/cropName)" />
+	<xsl:variable name="opt" select="normalize-space(Exslt.ExsltStrings:lowercase(/macro/optimize))" />
 	<xsl:variable name="optimize">
 		<xsl:choose>
-			<xsl:when test="contains('1,yes,true,',concat($opt,','))">
+			<xsl:when test="string($opt)!='' and contains('1,yes,true,',concat($opt,','))">
 				<xsl:value-of select="number(1)" />
 			</xsl:when>
 			<xsl:otherwise>
@@ -29,35 +29,35 @@
 	</xsl:variable>
 	<xsl:variable name="width">
 		<xsl:choose>
-			<xsl:when test="string(/macro/Width)='' and number(/macro/Width)!='NaN'">
+			<xsl:when test="string(/macro/width)='' or number(/macro/width)='NaN'">
 				<xsl:value-of select="''" />
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="number(/macro/Width)" />
+				<xsl:value-of select="number(/macro/width)" />
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:variable>
 	<xsl:variable name="height">
 		<xsl:choose>
-			<xsl:when test="string(/macro/Height)='' and number(/macro/Height)!='NaN'">
+			<xsl:when test="string(/macro/height)='' or number(/macro/height)='NaN'">
 				<xsl:value-of select="''" />
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="number(/macro/Height)" />
+				<xsl:value-of select="number(/macro/height)" />
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:variable>
 	<xsl:variable name="imgQual">
 		<xsl:choose>
-			<xsl:when test="string(/macro/ImgQual)!=''">
-				<xsl:value-of select="number(/macro/ImgQual)" />
+			<xsl:when test="string(/macro/imgQual)!=''">
+				<xsl:value-of select="number(/macro/imgQual)" />
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:value-of select="number(80)" />
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:variable>
-	<xsl:variable name="markUp" select="normalize-space(Exslt.ExsltStrings:lowercase(/macro/MarkUp))" />
+	<xsl:variable name="markUp" select="normalize-space(Exslt.ExsltStrings:lowercase(/macro/markUp))" />
 	<xsl:variable name="itemMarkup">
 		<xsl:choose>
 			<xsl:when test="string($markUp)=''">
@@ -71,17 +71,7 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:variable>
-	<xsl:variable name="className" select="normalize-space(Exslt.ExsltStrings:lowercase(/macro/CssClass))" />
-	<xsl:variable name="controlbar">
-		<xsl:choose>
-			<xsl:when test="contains('1,yes,true,',concat(normalize-space(Exslt.ExsltStrings:lowercase(/macro/VidControl)),','))">
-				<xsl:value-of select="'true'" />
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:value-of select="'false'" />
-			</xsl:otherwise>
-		</xsl:choose>
-	</xsl:variable>
+	<xsl:variable name="className" select="normalize-space(Exslt.ExsltStrings:lowercase(/macro/cssClass))" />
 	
 	<xsl:if test="string($propName)!=''">
 		<xsl:variable name="media" select="$currentPage/*[not(@isDoc) and name() = $propName]" />
@@ -97,7 +87,6 @@
 						<xsl:with-param name="height" select="$height" />
 						<xsl:with-param name="imgQual" select="$imgQual" />
 						<xsl:with-param name="itemMarkup" select="$itemMarkup" />
-						<xsl:with-param name="controlbar" select="$controlbar" />
 					</xsl:call-template>
 				</xsl:element>
 			</xsl:when>
@@ -110,7 +99,6 @@
 						<xsl:with-param name="height" select="$height" />
 					  <xsl:with-param name="imgQual" select="$imgQual" />
 					  <xsl:with-param name="itemMarkup" select="$itemMarkup" />
-						<xsl:with-param name="controlbar" select="$controlbar" />
 				</xsl:call-template>
 			</xsl:otherwise>
 		</xsl:choose>
@@ -126,11 +114,10 @@
 	<xsl:param name="height" />
 	<xsl:param name="imgQual" />
 	<xsl:param name="itemMarkup" />
-  <xsl:param name="controlbar" />
 
 	<xsl:for-each select="$mediaNodes//mediaItem/*[string(@id) != '']">
 		
-    <xsl:if test="local-name(.) = 'Image'">
+	  <xsl:if test="local-name(.) = 'Image' and ./umbracoFile[string(.)!='']">
 		  <xsl:variable name="src">
 			  <xsl:choose>
 				  <xsl:when test="string($cropName) != '' and count(.//crop[string(@name) = $cropName]/@url) &gt; 0">
@@ -176,8 +163,8 @@
         <xsl:with-param name="videoSrc" select="./youTubeUrl[string(.)!=''] | ./umbracoFile[string(.)!='']" />
         <xsl:with-param name="width" select="$width" />
         <xsl:with-param name="height" select="$height" />
-        <xsl:with-param name="controlbar" select="$controlbar" />
-        <xsl:with-param name="caption" select="@nodeName" />
+        <xsl:with-param name="alt" select="@nodeName" />
+		<xsl:with-param name="videoImg" select="./videoImage" />
       </xsl:call-template>
     </xsl:if>
   
@@ -197,11 +184,15 @@
 		<xsl:choose>
 			<xsl:when test="number($optimize) = 1">
 				<xsl:attribute name="src"> 
-					<xsl:text>/ImageGen.ashx?image=</xsl:text><xsl:value-of select="$src" /> 
+					<xsl:text>/ImageGen.ashx?altimage=/css/images/placeholder-lrg.png</xsl:text>
+					<xsl:text>&amp;image=</xsl:text><xsl:value-of select="$src" /> 
 					<xsl:if test="string($width)!='' and string($width)!='NaN'"><xsl:text>&amp;width=</xsl:text><xsl:value-of select="$width" /></xsl:if>
 					<xsl:if test="string($height)!='' and string($height)!='NaN'"><xsl:text>&amp;height=</xsl:text><xsl:value-of select="$height" /></xsl:if>
 					<xsl:text>&amp;compression=</xsl:text><xsl:value-of select="$imgQual" />
-					<xsl:text>&amp;constrain=true</xsl:text> 
+					<xsl:text>&amp;constrain=true</xsl:text>
+					<xsl:text>&amp;overlayimage=/css/images/watermark.png</xsl:text>
+					<xsl:text>&amp;align=right</xsl:text>
+					<xsl:text>&amp;valign=bottom</xsl:text>
 				</xsl:attribute>
 			</xsl:when>
 			<xsl:otherwise>
@@ -222,32 +213,67 @@
 	<xsl:param name="videoSrc" />
 	<xsl:param name="width" />
 	<xsl:param name="height" />
-	<xsl:param name="controlbar" />
-	<xsl:param name="caption" />
-  	<xsl:param name="thumb" select="/path/to/placeholder.jpg" />
+	<xsl:param name="alt" />
+  	<xsl:param name="videoImg" />
   
   <xsl:variable name="youtube">
     <xsl:if test="not(contains($videoSrc,'/'))">
       <xsl:text>true</xsl:text>
     </xsl:if>
   </xsl:variable>
-    
+  
+  <xsl:variable name="vImg">
+	  <xsl:choose>
+		  <xsl:when test="contains($youtube,'true')">
+			  <xsl:text>http://img.youtube.com/vi/</xsl:text><xsl:value-of select="$videoSrc" /><xsl:text>/0.jpg</xsl:text>
+		  </xsl:when>
+		  <xsl:when test="string($videoImg)!=''">
+			  <xsl:value-of select="umbraco.library:GetMedia($videoImg,false)/umbracoFile" />
+		  </xsl:when>
+		  <xsl:otherwise>
+			  <xsl:value-of select="'/css/images/placeholder-lrg.png'" />
+		  </xsl:otherwise>
+	  </xsl:choose>
+  </xsl:variable>
+  
   <div id="player{$uniqueId}" class="video-loader">
     <img>
-      <xsl:attribute name="src"><xsl:value-of select="$thumb" /></xsl:attribute>
-      <xsl:attribute name="alt"><xsl:value-of select="$caption" /></xsl:attribute>     
+	  <xsl:attribute name="src"><xsl:text>/ImageGen.ashx?image=</xsl:text><xsl:value-of select="$vImg" /><xsl:text>&amp;compression=10&amp;constrain=true</xsl:text></xsl:attribute>
+      <xsl:attribute name="alt"><xsl:value-of select="$alt" /></xsl:attribute>     
     </img>
   </div>
-  
+	
+	<xsl:variable name="vWidth">
+		<xsl:choose>
+			<xsl:when test="string($width)!=''">
+				<xsl:value-of select="$width" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="number(560)" />
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:variable>
+	<xsl:variable name="vHeight">
+		<xsl:choose>
+			<xsl:when test="string($height)!=''">
+				<xsl:value-of select="$height" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="number(315)" />
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:variable>
+	
   <script><![CDATA[window.jwplayer || document.write('<script src="/scripts/jwplayer/jwplayer.js"><\/script>')]]></script>
   <script>
     <![CDATA[
       jwplayer('player]]><xsl:value-of select="$uniqueId" /><![CDATA[').setup({
-        file: ']]><xsl:choose><xsl:when test="contains($youtube,'true')"><xsl:text>http://www.youtube.com/watch?v=</xsl:text><xsl:value-of select="$videoSrc" /></xsl:when><xsl:otherwise><xsl:value-of select="$videoSrc" /></xsl:otherwise></xsl:choose><![CDATA[']]><xsl:if test="string($thumb)!=''"><![CDATA[, 
-        image: ']]><xsl:value-of select="$thumb" /><![CDATA[']]></xsl:if><![CDATA[,
-        controls: ']]><xsl:value-of select="$controlbar" /><![CDATA[',
-        width: ']]><xsl:value-of select="$width" /><![CDATA[',
-        height: ']]><xsl:value-of select="$height" /><![CDATA[',
+        file: ']]><xsl:choose><xsl:when test="contains($youtube,'true')"><xsl:text>http://www.youtube.com/watch?v=</xsl:text><xsl:value-of select="$videoSrc" /></xsl:when><xsl:otherwise><xsl:value-of select="$videoSrc" /></xsl:otherwise></xsl:choose><![CDATA[']]><xsl:if test="string($vImg)!=''"><![CDATA[, 
+        image: ']]><xsl:value-of select="$vImg" /><![CDATA[']]></xsl:if><![CDATA[,
+        title: ']]><xsl:value-of select="$alt" /><![CDATA[',
+		controls: 'true',
+        width: ']]><xsl:value-of select="$vWidth" /><![CDATA[',
+        height: ']]><xsl:value-of select="$vHeight" /><![CDATA[',
         stretching: 'fill',
         autostart: 'false',
         fallback: 'true',

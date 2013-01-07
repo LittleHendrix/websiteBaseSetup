@@ -1,0 +1,25 @@
+﻿@inherits umbraco.MacroEngines.DynamicNodeContext
+
+ @{
+     
+    if(Model.HasValue(Parameter.fieldName)) {     
+
+        
+        Int32 itemsToDisplay;
+        bool isNum = Int32.TryParse(Parameter.itemsToDisplay, out itemsToDisplay);
+        if (!isNum) {
+            itemsToDisplay=1;
+        }
+        
+        var n = 0;
+        foreach (var item in @Model.XPath("descendant::" + @Parameter.fieldName + "//Image"))
+        {
+            if (n<itemsToDisplay) {
+                <img src="@item.umbracoFile"  alt="@Parameter.altString"  class="@Parameter.classString"/>
+            }
+            n++;
+        }
+    }
+
+}
+

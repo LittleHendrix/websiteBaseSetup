@@ -24,19 +24,35 @@
         <channel>
             <title>@rssTitle</title>
             <link>@siteURL</link>
-            <pubDate>@latestNodeUpdated.UpdateDate.ToString("r")</pubDate>
-            <generator>umbraco</generator>
             <description>@rssDescription</description>
             <language>en</language>
+            <pubDate>@latestNodeUpdated.UpdateDate.ToString("r")</pubDate>
+            <lastBuildDate>@latestNodeUpdated.UpdateDate.ToString("r")</lastBuildDate>
+            <docs>@Model.Url/rss</docs>
+            <copyright>Copyright @DateTime.Now.Year, @siteName</copyright>
+            <generator>umbraco</generator>
+            <image>
+                <url>@siteURL/css/images/logo.gif</url>
+                <title>@rssTitle</title>
+                <link>@siteURL</link>
+            </image>
             @{
                 foreach (var item in Model.Children.Where("Visible"))
                 {
+                    var feedCopy = item.HasValue("bodyText") ? item.bodyText : "";
+                    var feedCopySum = item.HasValue("metaDescription") ? item.metaDescription : Library.StripHtml(feedCopy);
+                    feedCopySum = Library.Truncate(feedCopySum, 50, true);
+                    var feedImage = item.HasValue("pageMedia") ? item.pageMedia : "";
                     <item>
                         <title>@item.Name</title>
                         <link>@item.Url</link>
+                        <description>@feedCopySum</description>
                         <pubDate>@item.UpdateDate.ToString("r")</pubDate>
+                        <dc:creator>Alex Allan</dc:creator>
+                        <category>Sculpture</category>
+                        <category>Model</category>
                         <guid>@item.Url</guid>
-                        <content:encoded><![CDATA[ @(item.HasValue("bodyText") ? item.bodyText : "") ]]></content:encoded>
+                        <content:encoded><![CDATA[ @feedCopy ]]></content:encoded>
                     </item>
                 }
             }

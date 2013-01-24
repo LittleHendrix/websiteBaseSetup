@@ -87,17 +87,31 @@ $base-line-height  : 24px;
   *zoom: 1;
 
   &:before {
-	content: "";
+	content: " ";
 	display: table;
   }
   &:after {
-    content: "\0020";
+    content: " ";
     display: table;
     height: 0;
     clear: both;
     overflow: hidden;
     visibility: hidden;
   }
+}
+
+@mixin imgReplace {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+	&:before {
+		content: "";
+		display: block;
+		width: 0;
+		height: 150%;
+	}
 }
 
 @mixin animation (

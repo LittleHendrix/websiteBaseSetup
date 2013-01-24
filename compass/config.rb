@@ -1,5 +1,5 @@
 # Require any additional compass plugins here.
-require "susy"
+require "zurb-foundation"
 
 # Set environment:
 # environment = :production or :development (default)
